@@ -1,0 +1,3 @@
+<app-demo> </app-demo>
+<app-customer-list customer-list  #customer></app-customer-list>    <!-- #customer is so i can refer to it in <p> ,and the customer is refering to customer lsit component-->
+<p> You have selected : {{customer.selectedCustomer?.name}}</p> <!-- We put ? because selectedCustomer is nothing or null before it is clicked-->

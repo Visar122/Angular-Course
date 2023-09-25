@@ -1,0 +1,11 @@
+<div>
+  <label>DOB: </label>
+  <input type="date" #Dobinput (blur)="calculateAge()"> <!-- Blur event gets called anytime iclick out of the <input>  -->
+</div>
+<div>
+  <label>Age:</label>
+  <input type="text" #ageinput>
+</div>
+<app-demo></app-demo> 
+<!-- And this is how u use a childcomponent inside a parent component using viewChild -->
+{{democomp.sayHello()}} <!-- To se it use console on the app -->

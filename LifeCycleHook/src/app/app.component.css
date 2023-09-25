@@ -1,0 +1,22 @@
+.container{
+    background-color: rgba(199, 209, 209, 0.37);
+  
+    text-align: center;
+   height: 330px;
+     
+}
+ input[type=text]{
+    border: none;
+     width: 200px;
+     height: 24px;
+     margin: 20px 10px ;
+     
+
+}
+button{
+    width: 90px;
+    border: none;
+    background-color: rgba(122, 122, 122, 0.308);
+    height: 24px;
+   
+}

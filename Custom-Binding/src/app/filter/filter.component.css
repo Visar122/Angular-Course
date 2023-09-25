@@ -1,0 +1,16 @@
+.filter-container{
+    background-color: white;
+    padding: 5px;
+    margin: 12px 200px;
+    border-radius: 66px;
+    width: 590px;
+    box-shadow: 0 0 30px rgba(211, 206, 206, 0.973);
+}
+.filter-component{
+    margin: 10px 20px;
+
+}
+input[type=radio]{
+    margin-left: 29px;
+   
+}

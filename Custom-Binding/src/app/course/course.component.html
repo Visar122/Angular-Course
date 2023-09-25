@@ -1,0 +1,45 @@
+<div class="Component"> 
+   <app-search (searchTextChanged)="onSearchText($event)">  
+    
+      
+
+    </app-search>  
+
+
+    <!-- now i just put the input properties from filter together with the methods in course-->
+    <app-filter [all] ="getTotalCourses()" 
+           [free]="getTotalFreeCourses()" 
+        [premium]="getTotalPremiumCourses()"
+       (filterRadioButtonSelectionChanged)="OnFilterRadioButtonChanged($event)" ><!-- the data from the method data will be stored inside the ($event)  -->
+                                                                           <!--filterRadioButtonSelectionChanged is from filterComponent -->
+
+ </app-filter> 
+
+</div>
+<!-- *ngIf=" " -->
+
+<ng-container *ngFor="let Course of courses"> <!-- *ngFor used to be in div course-container but i neede to make ng-container because two structural directive or ng with * in the same element -->
+<div class="course-container"   *ngIf="(CourseCountRadioButton === 'All' || CourseCountRadioButton === Course.type) && (SearchText === '' || Course.name.toLowerCase().includes(SearchText))"
+>
+
+    <div class="course-card">
+
+ <div>
+    <img [src]="Course.image" style="width: 255px; height: 170px;">
+ </div>
+     <div class="course-name"><h4> {{Course.name}}</h4></div>
+     <div class="course-description"><p> {{Course.description}}</p></div>
+  
+     <div class="details">
+
+          <div class="course-type" [ngStyle]="{color:Course.type === 'Free'?'Green':'Red'}"> <h5> {{Course.type}}</h5></div>
+          <div class="course-price"><b> Price :</b> {{Course.price}} €</div>
+     </div>
+
+     <div class="course-buttons">
+        <button class="btn btn-success">Buy now</button>
+        <button class="btn btn-danger">Show Details</button>
+     </div>
+    </div>
+</div>
+</ng-container>

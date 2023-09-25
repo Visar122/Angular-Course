@@ -1,0 +1,18 @@
+<div class="filter-container">
+
+    <span> Filter : </span>
+    <!--We are binding the selectedRadioButtonValue with the html with Ngmodel -->
+    <input type="radio" name="filter" value="All" [(ngModel)]="selectedRadioButtonValue"  
+    (change)="OnRadioButtonSelectionChanged()" >   <!-- The name  is used to group related input elements so they are  the same group and value to get a selcted input just like all have different value-->
+    <span> All Course ({{all}})</span>
+
+ 
+    <input type="radio" name="filter" value="Free" [(ngModel)]="selectedRadioButtonValue" 
+    (change)="OnRadioButtonSelectionChanged()">
+    <span> Free Course ({{free}})</span>
+
+   
+    <input type="radio" name="filter" value="Premium" [(ngModel)]="selectedRadioButtonValue"
+    (change)="OnRadioButtonSelectionChanged()">   <!--All is left now is to pass a property like  SelectedRadioButton to the parent component or to the course component -->
+    <span> Premium Course ({{premium}})</span>    <!-- So ut can decide which course to display-->
+</div>
