@@ -3,7 +3,7 @@ import { Directive, ElementRef, OnInit, Renderer2 } from '@angular/core';
 @Directive({
   selector: '[appHighlight]'
 })
-export class HighlightDirective implements OnInit {      //ng g directive Name
+export class HighlightDirective implements OnInit {      //ng g directive Name  or ng g d
 
   constructor(private element:ElementRef,private renderer:Renderer2) { //Renderer2 is a class which allows us to manipulate the dom elements without accessing the dome directly
                                                                         //private is made so i can acess the properties outside of the constructor dx the ngOninit

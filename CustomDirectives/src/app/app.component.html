@@ -1,10 +1,12 @@
 <h1 setBackground>This is App Component</h1>
-<div class="container" setBackground>
-  <p> This is a demo HTML conten to understand custom attribute directive in angular</p>
+<div class="container" setBackground appHover>
+  <p> This is a demo HTML content to understand custom attribute directive in angular</p>
 </div>
 
-<div  appHighlight>
-  <p> This is a demo HTML conten to understand custom attribute directive in angular</p>
+<div  appHighlight appHover>
+  <p> This is a demo HTML content to understand custom attribute directive in angular</p>
 </div>
 <!--SetBackground-->
-
+<div  appHover appBetterhighlight [deafaultColor]="'yellow'"   [highlightColor]="'red'" [title]="'Example title'">  <!-- If i do it like this in the betterhuglight.ts the propertis will change from transparent and pin to yellow and red-->
+  <p> This is a demo HTML content to understand @HostBinding attribute directive in angular</p>
+</div>
