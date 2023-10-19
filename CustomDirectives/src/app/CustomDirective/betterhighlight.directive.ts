@@ -24,7 +24,7 @@ export class BetterhighlightDirective {
   }
   @HostListener ('mouseenter') mouseEnter(){ 
     this.background=this.highlightColor                                    //  this.background='pink' 
-    this.border='red 2px solid' 
+    this.border='black 2px solid' 
     this.title=this.thetitle
   }
   @HostListener ('mouseleave') mouseLeave(){

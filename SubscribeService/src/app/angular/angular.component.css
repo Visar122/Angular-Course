@@ -1,0 +1,22 @@
+.container{
+    width: 341px;
+   margin: 0px 22px;
+    background-color: rgb(220, 225, 230);
+
+}
+button{
+    width: 170px;
+    height: 32px;
+    border-radius: 9px;
+    border: none;
+    background-color: rgb(235, 100, 11);
+    font-weight: bolder;
+    
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(131, 129, 123);
+    color: white;
+  
+    
+}

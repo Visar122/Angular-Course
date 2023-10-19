@@ -1,1 +1,32 @@
-<p>about works!</p>
+<div class="container">
+
+    <div class="team">
+        <h1> About Us Page</h1>
+        <p> Some text about who we are and what we do <br> We are a big team  that work with  programming courses,our motives are .</p>
+
+        <h2>Our team</h2>
+    </div>
+    
+    <div class="team-card" >
+      
+        <div class="the-team" *ngFor="let c of TheTeam">
+            <div>
+                <img [src]="c.image" style="width: 293px; height: 170px;">
+                <hr>
+             </div>
+                 <div class="name"><h4> {{c.name}}</h4></div>
+                 <div class="profession"><p> {{c.profession}}</p></div>
+              
+                 <div class="details">
+            
+                      <div class="description"> {{c.description}}</div>
+                      <div class="Email">{{c.Email}} </div>
+                 </div>
+            
+                 <div class="team-buttons">
+                    <button>Contact</button>
+             
+                 </div>
+                </div>
+
+    </div>

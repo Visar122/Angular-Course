@@ -1,0 +1,68 @@
+.container{
+    background-color:#f8f8f8;
+
+    
+    width: 100%;
+    height: 1000px;
+
+    margin-top: -15px;
+    
+
+  
+}
+.text{
+    text-align: center;
+}
+.firstname{
+    margin: 0px 0px;
+    padding: 50px 30px;
+    right: 450px;
+}
+.firstname  input[type="text"]{
+    width: 290px;
+    height: 35px;
+    background-color: transparent;
+    
+}
+input.firstname::placeholder {
+    color: #999; /* Set the text color */
+    font-style: italic; /* Add italic style */
+    /* Add other styles as needed */
+}
+.lasttname{
+    margin: 0px 0px;
+    padding: 0px 30px;
+    
+}
+.lasttname  input[type="text"]{
+    width: 290px;
+    height: 35px;
+    background-color: transparent;
+    
+}
+input.lasttname::placeholder {
+    color: #999; /* Set the text color */
+    font-style: italic; /* Add italic style */
+    /* Add other styles as needed */
+}
+.Country{
+    margin: 0px 0px;
+    padding: 50px 30px;
+    right: 450px;
+}
+.Subject{
+    margin: 0px 0px;
+    padding: 0px 30px;
+    
+}
+.Subject  input[type="text"]{
+    width: 400px;
+    height: 250px;
+    background-color: transparent;
+    
+}
+input.Subject::placeholder {
+    color: #999; /* Set the text color */
+    font-style: italic; /* Add italic style */
+    /* Add other styles as needed */
+}

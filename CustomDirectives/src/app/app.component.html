@@ -1,12 +1,43 @@
+<!--SetBackground-->
 <h1 setBackground>This is App Component</h1>
 <div class="container" setBackground appHover>
   <p> This is a demo HTML content to understand custom attribute directive in angular</p>
 </div>
 
-<div  appHighlight appHover>
+<div   appHighlight appHover>
   <p> This is a demo HTML content to understand custom attribute directive in angular</p>
 </div>
-<!--SetBackground-->
-<div  appHover appBetterhighlight [deafaultColor]="'yellow'"   [highlightColor]="'red'" [title]="'Example title'">  <!-- If i do it like this in the betterhuglight.ts the propertis will change from transparent and pin to yellow and red-->
+
+<div class="container" appHover appBetterhighlight [deafaultColor]="'yellow'"   [highlightColor]="'red'" [title]="'Example title'">  <!-- If i do it like this in the betterhglight.ts the propertis will change from transparent and pin to yellow and red-->
   <p> This is a demo HTML content to understand @HostBinding attribute directive in angular</p>
+</div>
+
+<!-- 'change-font' is because of - -->
+<div appHover appClass [display]="{container:true, 'change-font':true}" > <!-- [ngClass]="{class1:condition1,class2:condition2}" we ad classes and the if the condition is true the class runs-->
+  <p> This is a demo HTML content to understand how to create a custom ngClass directive</p>
+</div>
+
+<!-- ngStyle is an attribute directive therfro it needs to be inside []           [ngStyle]="{backgroundColor:'pink',color:'white'}"> -->
+<div class="container"appHover  [appStyle] ="{backgroundColor:'pink',color:'white'}">  <!-- used alias so that i put the name of the directive, This is so i dont have to use ng style so its not that important-->
+  <p> This is a Demo to understand how to create custon ng style</p>
+</div>
+
+<!--Want to make it possible so the div shows ehen the button is clicked-->
+<button class="btn btn-notice" (click)="displayNotice()">Show notice </button>
+<div class="info-container notice " *ngIf="display;else myVar" >
+   <h3>This is important notice</h3>
+   <p> This is a notice issuded for all website users</p>
+   
+</div> 
+
+<ng-template #myVar> 
+  <p>This is an example paragraph</p>
+</ng-template>
+
+<!--[ngSwitch]-->
+<div class="container" [ngSwitch]="ocuppation">
+  <p *ngSwitchCase="'teacher'">This paragraph  will be displayed when occupation is teacher </p>
+  <p *ngSwitchCase="'designer'" >This paragraph  will be displayed when occupation is designer </p>
+  <p *ngSwitchCase="'lawyer'">This paragraph  will be displayed when occupation is lawyer </p>
+  <p *ngSwitchDefault=""> This paragraph  will be displayed if no case matches whiitch expression </p>
 </div>

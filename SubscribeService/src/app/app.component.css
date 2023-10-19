@@ -1,0 +1,10 @@
+.container{
+   
+        display: flex;
+         
+        width: 341px;
+        margin: 20px 30%;
+        background-color: rgb(220, 225, 230);
+    
+   
+}

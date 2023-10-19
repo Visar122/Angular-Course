@@ -1,0 +1,25 @@
+.container{
+    width: 275px;
+    margin: 20px auto;
+    padding: 10px 10px;  
+
+
+   
+    background-color: #8ecfca33;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input[type="text"]{
+    width: 160px ;
+    height: 18px;
+    margin: 10px 10px;
+    
+
+}
+button{
+    border: none;
+    width: 80px;
+    background-color:rgb(235, 232, 232);
+    height: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}

@@ -1,0 +1,19 @@
+
+<div class="form">
+
+    <div>
+        <input type="text" placeholder="Username"  id="username"  [(ngModel)]="username" > <!--Two way data binding,we are binding this input with  username property-->
+                                                                                         <!-- Whatever the user types will be assigned to username,username is from ts --> 
+    </div> <!--I need to add formsmodule in app module-->
+
+    <div> 
+        <select name="status" id="status" [(ngModel)]="status">
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+    </select>
+    </div>
+
+    <div>
+        <button (click)="AddUser()" > Create User</button>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+.container{
+    background-color:#EFEFEF;
+
+    color: white;
+    
+    margin-top: -15px;
+  
+}
+.site-slogan{
+
+    width: 87%;
+ 
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.678),rgba(55, 56, 55, 0.678),rgba(0, 0, 0, 0.678));
+    text-align: center;
+    align-items: center;
+    margin: 10px 7%;
+    font-family: 'Lato', sans-serif;
+
+    height: 200px;
+    border: none;
+    box-shadow: 0 0 20px rgba(87, 85, 85, 0.973);
+   
+  
+
+}
+
+.courses{
+    text-align: center;
+    color: rgb(46, 43, 43);
+}
+.hr-color{
+    background-color: rgb(187, 185, 185);
+    height: 4px;
+}
+.PremiumCourses{
+    display: inline-flex;
+    margin: 22px 14px;
+    background-color: white;
+    box-shadow: 0 0 0 17px 	rgb(250, 250, 250);
+    width: 93.5%;
+    border: none;
+}
+.course-name{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 38px 15px;
+    font-size: 32px;
+}
+.course-description{
+    margin: 39px 5px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.details{
+    display: flex;
+ 
+}
+.course-type{
+    font-size: 13px;
+    margin: 44px 8px;
+    
+}
+.course-price{
+    width: 100%;
+
+    margin: 47px 32px;
+}
+.btn{
+       
+    width: 100px;
+     height: 32px;
+    margin: 30px 14px;
+    font-size: 12.5px;
+}

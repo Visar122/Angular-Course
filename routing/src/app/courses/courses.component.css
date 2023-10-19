@@ -1,0 +1,60 @@
+
+h1{
+    text-align: center;
+    margin:40px;
+  
+}
+.course-container{
+    display: inline-flex;
+
+ 
+  
+
+    gap: 50px; 
+    margin: 15px 14px;
+
+ box-shadow: 0 0 30px rgba(58, 54, 54, 0.973);
+ border: none;
+
+    
+}
+.course-card{
+    width: 250px;  /* the display becomes like a grid when i put the width*/
+    height: 390px;
+    margin: 49px 18px;
+    background-color: white;
+  
+}
+.course-name{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.course-description{
+    margin: 10px 0px;
+    padding: 5px 0px;
+    font-size: 16px;
+}
+.details{
+    display: flex;
+    margin: 0px 0px;
+}
+
+.course-type{
+    width: 50%;
+    font-weight: bold;
+}
+.course-buttons{
+    display: flex;
+    
+}
+
+    .btn{
+       
+        width: 120px;
+         height: 32px;
+        margin: 0 7px;
+        padding: 2px 9px;
+        font-size: 12.5px;
+    }
+    
+    

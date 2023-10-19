@@ -1,0 +1,58 @@
+.container{
+    background-color:#fafafa;
+
+    color: white;
+    width: 90%;
+    text-align: center;
+    color: black;
+    margin-top: -15px;
+    height: 850px;
+
+  
+}
+.team{
+    margin: 14px;
+    
+}
+.team-card{
+    display: inline-flex;
+    margin: 52px 27px;
+background-color: #EFEFEF;
+ 
+ border: none;
+ gap: 0px;
+
+}
+.the-team{
+    width: 300px;  /* the display becomes like a grid when i put the width*/
+  
+    margin: 9px 18px;
+    background-color: white;
+    box-shadow: 0 0 40px rgba(177, 173, 173, 0.973);
+
+
+}
+
+
+.name{
+      
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.profession{
+    margin: 7px -0px;
+ 
+    font-size: 16px;
+    margin-right: 0px;
+    color: rgba(133, 127, 127, 0.973);;
+}
+.description{
+    margin: 0px 0px;
+    padding: 5px 0px;
+    font-size: 16px;
+}
+.team-buttons button{
+    margin: 12px ;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    width: 120px;
+}

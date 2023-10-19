@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 430px;
+    
+}
+.details{
+    background-color: rgb(230, 232, 233);
+     margin: 0px 10px;
+     width: 320px;
+     padding: 5px;
+}
+.higlight{
+    background-color: #ddd;
+    border:#FF5722 3px solid;
+    border-radius: 5px;
+}

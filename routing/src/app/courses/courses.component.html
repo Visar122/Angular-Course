@@ -1,1 +1,26 @@
-<p>courses works!</p>
+
+<h1> Courses</h1>
+<ng-container *ngFor="let c of course2"> 
+    <div class="course-container"> 
+<div class="course-card">
+
+    <div>
+       <img [src]="c.image" style="width: 280px; height: 200px ;margin-top: -48px;margin-left: -15px;">
+    </div>
+        <div class="course-name"><h4> {{c.name}}</h4></div>
+        <div class="course-description"><p> {{c.description}}</p></div>
+     
+        <div class="details">
+   
+             <div class="course-type" [ngStyle]="{color:c.type === 'Free'?'Green':'Red'}"> <h5> {{c.type}}</h5></div>
+             <div class="course-price"><b> Price :</b> {{c.price}} €</div>
+        </div>
+   
+        <div class="course-buttons">
+           <button class="btn btn-success">Buy now</button>
+           <button class="btn btn-danger">Show Details</button>
+        </div>
+       </div>
+    </div>
+
+</ng-container>

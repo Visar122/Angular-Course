@@ -1,1 +1,37 @@
-<p>home works!</p>
+<div class="container">
+    <br>
+    <br>
+     <div class="site-slogan">
+        <br>
+
+
+       <h1 style="font-size: 50px;    font-weight: 550;"> Learn software <br> courses online for free.</h1>
+ 
+    </div>
+    <div class="courses" >
+        <h2>Popular Courses</h2>
+        <hr class="hr-color">
+        <div class="PremiumCourses" *ngFor="let c of Courses">
+            <div>
+                <img [src]="c.image" style="width: 255px; height: 170px;">
+             </div>
+                 <div class="course-name"><h4> {{c.name}}</h4></div>
+                 <div class="course-description"><p> {{c.description}}</p></div>
+              
+                 <div class="details">
+            
+                      <div class="course-type" [ngStyle]="{color:c.type === 'Free'?'Green':'Red'}"> <h5> {{c.type}}</h5></div>
+                      <div class="course-price"><b>  Price: </b> {{c.price}} €</div>
+                 </div>
+            
+                 <div class="course-buttons">
+                    <button class="btn btn-success">Buy now</button>
+                    <button class="btn btn-danger">Show Details</button>
+                 </div>
+                </div>
+
+        </div>
+
+    </div>
+ 
+
