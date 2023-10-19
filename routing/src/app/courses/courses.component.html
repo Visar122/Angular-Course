@@ -5,8 +5,8 @@
 <div class="course-card">
 
     <div>
-       <img [src]="c.image" style="width: 280px; height: 200px ;margin-top: -48px;margin-left: -15px;">
-    </div>
+         <img [src]="c.image" style="width: 280px; height: 200px ;margin-top: -48px;margin-left: -15px;">
+        </div>
         <div class="course-name"><h4> {{c.name}}</h4></div>
         <div class="course-description"><p> {{c.description}}</p></div>
      
@@ -18,9 +18,10 @@
    
         <div class="course-buttons">
            <button class="btn btn-success">Buy now</button>
-           <button class="btn btn-danger">Show Details</button>
+           <button class="btn btn-danger" routerLink="/Courses/Course/{{c.id}}">Show Details</button>
         </div>
        </div>
     </div>
+
 
 </ng-container>

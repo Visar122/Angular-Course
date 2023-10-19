@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Team } from '../team.service';
+import { Team } from '../Services/team.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,7 @@ import { Team } from '../team.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent  implements OnInit{
-  constructor(private team:Team){
+  constructor(private team:Team,private route:Router){
 
   }
    TheTeam:{name:string;profession:string,Email:string,image:string,description:string;}[]=[]
@@ -15,6 +16,10 @@ export class AboutComponent  implements OnInit{
 
     this.TheTeam=this.team.Team;
 
+  }
+  navigateToHome(){
+  //this.route.navigate(['Home']);
+  this.route.navigateByUrl('Home');
   }
 
 }

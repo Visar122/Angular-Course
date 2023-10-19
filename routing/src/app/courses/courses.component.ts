@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Course } from '../course service';
+import { Course } from '../Services/course service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-courses',
@@ -8,13 +9,15 @@ import { Course } from '../course service';
 })
 export class CoursesComponent implements OnInit {
 
-  constructor(private course:Course){}
 
-  course2:{name:string,author:string,duration:number,type:string,price:number;ratings:number,image:string,description:string}[]=[];
+  constructor(private course:Course,private activatedRoute:ActivatedRoute){}
+
+  course2:{id:number,name:string,author:string,duration:number,type:string,price:number;ratings:number,image:string,description:string}[]=[];
 
   ngOnInit(){
   
      this.course2=this.course.courses
+
 
   }
 }

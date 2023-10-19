@@ -1,0 +1,29 @@
+<div class="flex-container">
+    <div class="content-container">
+      <div class="form-container">
+        <form #sellerSignup="ngForm"(ngSubmit)="sign(sellerSignup.value)"  class="common-form">
+          <h1>Login</h1>
+          <br>
+          <br>
+          <span class="subtitle">USERNAME:</span>
+          <br>
+          <input type="text" name="name"  ngModel>
+          
+          <br>
+          <span class="subtitle">PASSWORD:</span>
+          <br>
+    
+         
+            <input type="password"  class="form-input"  placeholder=" Enter Password" name="password" ngModel>
+            <br><br>
+            <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel>
+            <br><br>
+            <input type="submit" value="SUBMIT" class="submit-btn" >
+       
+       
+        </form>
+
+      </div>
+    </div>
+  </div>
+    

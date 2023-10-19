@@ -1,0 +1,28 @@
+{
+  "Seller": [
+    {
+      "name": "Visar Shabani",
+      "email": "shabaniwiisar@gmail.com",
+      "password": "1234567",
+      "id": 1
+    },
+    {
+      "name": "ali Shabani",
+      "email": "shabaniwiisar@gmail.com",
+      "password": "1234567",
+      "id": 2
+    },
+    {
+      "name": "Visar Shabani",
+      "password": "12345678",
+      "email": "shabaniwiisar@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Tom",
+      "password": "123456",
+      "email": "vi.sar.bmw@live.com",
+      "id": 4
+    }
+  ]
+}

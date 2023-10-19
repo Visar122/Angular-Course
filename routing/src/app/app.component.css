@@ -1,5 +1,5 @@
 .main-container{
-    margin: 2px auto; 
+    margin: 0px auto; 
   
 box-shadow: 0 0 20px rgba(58, 54, 54, 0.973);
  
@@ -8,7 +8,8 @@ box-shadow: 0 0 20px rgba(58, 54, 54, 0.973);
 }
 .nav-container{
    
-     
+    
+     position: relative;
     display:flex;
     justify-content: space-between;
     margin-left: 29%;
@@ -16,13 +17,13 @@ box-shadow: 0 0 20px rgba(58, 54, 54, 0.973);
   
     font-family: 'Lato', sans-serif;
     
-    
+    background:url
 
 }
 
 .nav-container ul{
 display:flex;  /* makes them horizontal*/
-margin: 10px 70px;
+margin: -1px 70px;
 
 list-style-type: none;
 text-decoration: none;
@@ -57,4 +58,5 @@ width: 90%;
 .nav-container ul li a:hover{
 color: #fac031;
 }
+
 

@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 /* The global styles defined in this file will be applied across all components and views in your Angular application.*/
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+
+}
 body{
     font-family: 'sans-serif';
     background-image: url('assets\Background.jpg');
@@ -8,5 +16,5 @@ body{
 .container{
     margin-left: 5%;
     margin-right: 5%;
-    
+    color: white;
 }

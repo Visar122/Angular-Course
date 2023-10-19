@@ -1,9 +1,10 @@
 .active{
-    background-color: #eeecec;
-
+    background-color: #dfd9d9bd;
+      border-radius:60px;
     text-align: center;
-    padding: 10px;
-    width: 120px;
+    padding: 8px;
+    width: 89px;
+
 
 
 }

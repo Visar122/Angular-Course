@@ -10,7 +10,7 @@
 
     width: 87%;
  
-    background: linear-gradient(to left,rgba(0, 0, 0, 0.678),rgba(55, 56, 55, 0.678),rgba(0, 0, 0, 0.678));
+    background:url('src/assets/background.jpg');
     text-align: center;
     align-items: center;
     margin: 10px 7%;

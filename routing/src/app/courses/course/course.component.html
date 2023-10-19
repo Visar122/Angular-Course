@@ -1,0 +1,36 @@
+
+<div class="course-container">
+  <div class="course-card">
+          <div class="image-container">
+                <img [src]="Courses.image" alt="Course Image">
+            </div>
+       <div class="course-details">
+             <div class="course-name">
+                  <h4  *ngIf="!EditMode">  {{Courses.name}}</h4>
+                  <div style="text-align: center;" *ngIf="EditMode">
+                        <input type="text" [(ngModel)]="Courses.name">
+                  </div>
+            </div>
+       </div>
+       <div class="details">
+           <div class="author"><b>Author:  </b>{{Courses.author}}</div>
+           <div class="duration"><b>Author:   </b>{{Courses.duration}} Hours</div>
+        
+            <div class="course-type" [ngStyle]="{color: Courses.type === 'Free' ? 'Green' : 'Red'}">
+                 <h5> {{Courses.type}}</h5> </div>
+
+        </div>
+      
+         <div class="course-price"><b> Price :</b> {{Courses.price}} €</div>
+        <div class="course-description"><p> {{Courses.description}}</p></div>
+       
+        <div class="course-buttons">
+        <button class="btn btn-success">Buy now</button>
+
+      </div>
+      <a [routerLink]="['/Courses/Course',101]">Go to first course</a>
+<!--       <button  [routerLink]="['/Courses/Course',Courses.id]" [queryParams]="{edit:true}">Edit</button> -->
+<button (click)="Appendqueryparam()">Edit</button>
+<button (click)="EditMode=false" [routerLink]="['/Courses/Course',Courses.id]"> Update</button>
+</div>
+</div>

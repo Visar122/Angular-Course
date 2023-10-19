@@ -1,19 +1,23 @@
+
+.title{
+    font-size:20px;
+    color: #fac031;
+    
+}
 .nav{
     display: flex; /*Puts  all of them in one line*/
     justify-content: space-between;
 
     color: rgb(0, 0, 0);
-    box-shadow: 0 0 3px rgba(150, 140, 140, 0.973);
-    border-bottom: solid 4px white;
- 
+
     z-index:1;
-    
-    padding:12px ;
+
   
 }
 
 .icon-container{
     display: flex;
+    margin: 10px;
 
 }
 .icon-container span{
@@ -38,10 +42,11 @@
 .nav-search{
    
     display:flex;
-    margin-left: 5%;
+    margin-left: 20%;
     margin-right: 5%;
     margin-top: 5px;
     justify-content: space-between;
+
    
    
 }
@@ -49,19 +54,27 @@
 
      width: 700px;
     
-     border: 1px solid rgb(19, 19, 19);
-    height: 34px;
-    border-right: none ;
+     border: 1px solid rgb(248, 246, 246);
+    height: 32.5px;
+    
+    background: transparent;
+    color: white;
+    
     
     
   
    
 }
+.nav-search input::placeholder{
+    color: white;
+}
 .nav-search button{
     width: 69px;
-    color: rgb(16, 15, 17);
-    border: 1px solid rgb(0, 0, 0);
-    height: 38px;
+    color: rgb(247, 247, 247);
+    border: 1px solid rgb(248, 246, 246);
+    height: 33px;
+     
+    background: transparent;
     
     
    

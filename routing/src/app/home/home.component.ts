@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Course } from '../course service';
+import { Course } from '../Services/course service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   }
 
-  Courses:{name:string,author:string,duration:number,type:string,price:number;ratings:number,image:string,description:string}[]=[];
+  Courses:{id:number;name:string,author:string,duration:number,type:string,price:number;ratings:number,image:string,description:string}[]=[];
 
   ngOnInit(){
     this.Courses=this.course.courses.filter(course=>course.type==='Premium')

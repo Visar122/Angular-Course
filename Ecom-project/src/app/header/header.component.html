@@ -2,9 +2,9 @@
 
 <nav class="nav">
      <div class="icon-container"> 
-      <span class="title" style=font-size:33px;color:white>ECOMM</span>
+      <span class="title" style="font-family: mv boli;">ECOMM</span>
         
-        <i class="fa-solid fa-cart-shopping  custom-bounce"  style="color: #ffffff; font-size: 25px" ></i>
+        <i class="fa-solid fa-cart-shopping  custom-bounce"  style="color: #ffffff; font-size: 21px" ></i>
     </div>
     
  
@@ -16,11 +16,12 @@
        
        
     </div>
-    <ul> 
-        <li><a href="#"> Seller</a> </li>
-        <li><a href="#"> Home</a> </li>
+    <ul style="font-size:18px;"> 
+      
+        <li><a routerLink=""> Home</a> </li>
+        <li><a [routerLink]="'seller-auth'"> Seller</a> </li>
         <li><a href="#"> Login</a> </li>
-        <li><a href="#"> Cart(0)</a> </li>
+        <li><a href="#"> Cart (0)</a> </li>
     </ul>
 
 </nav>
