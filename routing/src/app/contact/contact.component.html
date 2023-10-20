@@ -6,17 +6,17 @@
     
     <div class="firstname"> 
         <h5>First Name</h5>
-        <input type="text"  placeholder="Your FirstName ..">
+        <input type="text"  placeholder="Your FirstName .."[(ngModel)]="FirstName">
     </div>
     <div class="lasttname"> 
         <h5>First Name</h5>
-        <input type="text"  placeholder="Your LastName ..">
+        <input type="text"  placeholder="Your LastName .." [(ngModel)]="LastName">
     </div>
     
     <div class="Country"> 
         <h5> Country</h5>
         <label for="country "></label>
-        <select id="country"> 
+        <select id="country" [(ngModel)]="Country"> 
             <option value="albanien">Albanien </option>
             <option value="danmark">Danmark </option>
             <option value="usa">USa </option>
@@ -24,9 +24,10 @@
         </select>
     </div>
 
-    <div class="Subject">
+    <div class="Subject" >
         <h5> Subject</h5>
-        <input type="text" placeholder="Write something ..">
+        <input type="text" placeholder="Write something .." [(ngModel)]="Subject">
+        <input type="submit" value="SUBMIT" class="submit-btn" >
     </div>
 
 

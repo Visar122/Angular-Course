@@ -61,8 +61,14 @@ export class Course{
     {id:112,name:"Advanced Typescript",author:'Tom Johnson ', duration:28, type:'Premium',
     price:26.00, ratings:5.0, image:'assets/ts.jpg',
     description:'På dette kursus vil du lære  avanceret begreber i Type Script. Dette kursus er udelukkende designet til begyndere'
-  }]
+  }];
+  GetAllCourses():any{
+    const courseList=new Promise((resolve,reject)=>{
 
-     
+      setTimeout(()=> {resolve(this.courses)},2000) //so this promise will get resolved after 5 sec
+    });
+    return courseList;
+  }
+
       }
       

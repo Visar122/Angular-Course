@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { Course } from './Services/course service';
 import { CourseGuardService } from './Services/course-guard.services';
 import { AuthService } from './Services/auth.service';
+import { Team } from './Services/team.service';
+import { CanDeactivateGuardService } from './Services/candeactivate-guard.service';
 
 
 
@@ -37,7 +39,7 @@ import { AuthService } from './Services/auth.service';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [Course,CourseGuardService,AuthService],
+  providers: [Course,CourseGuardService,AuthService,Team,CanDeactivateGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -54,6 +54,9 @@ input.lasttname::placeholder {
 .Subject{
     margin: 0px 0px;
     padding: 0px 30px;
+    display:grid;
+    grid-template-columns: (1fr 1fr);
+    gap:12%;
     
 }
 .Subject  input[type="text"]{
@@ -67,3 +70,19 @@ input.Subject::placeholder {
     font-style: italic; /* Add italic style */
     /* Add other styles as needed */
 }
+.submit-btn {
+    cursor: pointer;
+  
+    border: none;
+    border-radius: 8px;
+  
+    box-shadow: 2px 2px 7px #38d39f70;
+  
+    background: #38d39f;
+    color: rgba(255, 255, 255, 0.8);
+  
+    width: 120px;
+    height: 31px;
+  
+    transition: all 1s;
+  }

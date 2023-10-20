@@ -16,8 +16,11 @@ export class CoursesComponent implements OnInit {
 
   ngOnInit(){
   
-     this.course2=this.course.courses
+     //this.course2=this.course.courses
 
-
+    this.course.GetAllCourses().then((data: {id: number; name: string; author: string; duration: number; type: string; price: number; ratings: number; image: string; description: string; }[]=[])=>{      //this method is returning a promise so we use  the then method
+       
+      this.course2=data;
+    })
   }
 }
