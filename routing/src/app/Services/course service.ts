@@ -2,6 +2,8 @@ import { Subject } from "rxjs"
 
 export class Course{
 
+     
+
     courses=[ 
         {id:101, name:'JavaScript for beginners',author:'John heikela', duration:48, type:'Free',
         price:0.00, ratings:3.5, image:'assets/Java.jpg',
@@ -65,7 +67,7 @@ export class Course{
   GetAllCourses():any{
     const courseList=new Promise((resolve,reject)=>{
 
-      setTimeout(()=> {resolve(this.courses)},2000) //so this promise will get resolved after 5 sec
+      setTimeout(()=> {resolve(this.courses)},900) //so this promise will get resolved after 5 sec
     });
     return courseList;
   }

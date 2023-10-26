@@ -1,0 +1,26 @@
+
+#student {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #bfc2c1;
+}
+
+#student td, #student th {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+
+
+#student th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f8fdfc;
+   
+}
+.container{
+    width: 1040px;
+    margin: 20px auto;
+}

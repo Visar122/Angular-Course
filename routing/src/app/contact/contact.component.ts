@@ -18,7 +18,7 @@ export class ContactComponent implements IdeactivateComponent{   //i just implem
   }
 
   CanExit(){
-    if(this.FirstName||this.LastName||this.Subject){ //is means if the first name has a value or if the firstname is empty string it will not work
+    if(this.FirstName||this.LastName||this.Subject){ //is means if the first name has not a value or if the firstname is empty string it will not work
     return confirm('You have unsaved changes. Do you want to discard these changes'); //if the user clicks ok it will confirm will be tru if returns cancel it will return false
     }else{
       return true;

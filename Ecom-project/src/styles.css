@@ -12,6 +12,7 @@ body{
     font-family: 'sans-serif';
     background-image: url('assets\Background.jpg');
     background-size: cover;
+    color: white;
 }
 .container{
     margin-left: 5%;

@@ -15,6 +15,7 @@ import { CourseGuardService } from './Services/course-guard.services';
 import { AuthService } from './Services/auth.service';
 import { Team } from './Services/team.service';
 import { CanDeactivateGuardService } from './Services/candeactivate-guard.service';
+import { CourseResolveService } from './Services/course-resolve.service';
 
 
 
@@ -39,7 +40,7 @@ import { CanDeactivateGuardService } from './Services/candeactivate-guard.servic
     FormsModule,
     AppRoutingModule
   ],
-  providers: [Course,CourseGuardService,AuthService,Team,CanDeactivateGuardService],
+  providers: [Course,CourseGuardService,AuthService,Team,CanDeactivateGuardService,CourseResolveService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

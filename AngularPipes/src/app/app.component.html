@@ -1,0 +1,22 @@
+<div class="container"> 
+  <table id="student">
+ <tr > 
+  <th>Name</th>
+  <th>Course</th>
+  <th>Marks</th>
+  <th>Precentage</th>
+  <th>DOB</th>
+  <th>Gender</th>
+ </tr>
+
+ <tr *ngFor="let st of students">
+  <th>{{st.name}}</th>
+  <th>{{st.course}}</th>
+  <th>{{st.marks |currency:'EUR'}}</th>
+  <th>{{st.marks/totalMarks| percent:'1.2'}}</th> <!-- {{st.marks/totalMarks*100}}</th>  when i use  percent it * with 100 automatically-->
+  <th>{{st.DOB|date:"fullDate"}}</th>
+  <th>{{st.gender}}</th>
+
+ </tr>
+  </table>
+</div>

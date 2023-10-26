@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { signup } from '../data-type';
-import { Router } from '@angular/router';
 
+@Injectable({
+  providedIn:'root'
+})
 @Component({
   selector: 'app-seller-auth',
   templateUrl: './seller-auth.component.html',
@@ -10,17 +12,17 @@ import { Router } from '@angular/router';
 })
 export class SellerAuthComponent implements OnInit{
 
-  constructor(private seller:SellerService,private route:Router){}
- ngOnInit(){}
+  constructor(private seller:SellerService){}
+ ngOnInit(){
+  this.seller.reloadSeller();
+ }
 
  
-  sign(data:signup){
-    console.warn(data);
-    this.seller.userSignUp(data).subscribe((result)=>{
-      if(result){
-        this.route.navigate(['seller-home'])
-      }
-    })
+  sign(data:signup){//signup is an object form data-type.ts
+
+    this.seller.userSignUp(data);
+    
+    
     
 
   }  
