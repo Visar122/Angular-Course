@@ -1,27 +1,111 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="container"Setbackground> 
 
-<nav class="nav">
-     <div class="icon-container"> 
-      <span class="title" style="font-family: mv boli;">ECOMM</span>
-        
-        <i class="fa-solid fa-cart-shopping  custom-bounce"  style="color: #ffffff; font-size: 21px" ></i>
-    </div>
+    <router-outlet ></router-outlet>
+</div>
+<div  [ngSwitch]="menuType" >
+<div class="sidebar"  >
+    <div class="item" [routerLink]="'home'" style=" cursor:pointer;"style="margin:0px "   > 
+       <img class="icon" src="../assets/icon1.png"   width="40" height="35"  >
+
+      <div class="text">ECOM APP</div>
+ 
+   </div>
+   <hr/>
+   
+<div class="item"  *ngSwitchCase="'Default'"> 
+  <i class="fa-solid fa-house" routerLink="home" routerLinkActive="active"  ></i>
+
+   <div class="text">Home</div>
+  </div>
+   
+<div class="item"  *ngSwitchCase="'Default'">
+
+     <div class="icon" (click)="searched()" > 
+       <i class="fa-solid fa-magnifying-glass"   >
+       
+       </i>
+     </div>
+
+     <div class="text" >Search</div>
+         <div class="nav-search" *ngIf="(search)"> 
+       <input type="text" placeholder="Search Products" #myVariable (keyup)="0">
+       <button (click)="youSearched(myVariable)"> Search</button>
+       <button (click)="search=false;"> Close</button>
+       
+     </div>
+      
+
+</div>
+
+
+<div class="item"  *ngSwitchCase="'Default'">
+
+ 
+       <i class="fa-regular fa-user" [routerLink]="'seller-auth'" routerLinkActive="active"></i>
+    
+
+ <div class="text" >Seller-auth</div>
+     
+ </div>
+
+
+ <div class="item" [routerLink]="'login'"  routerLinkActive="active"  *ngSwitchCase="'Default'">
+
+
+       <i class="fa-solid fa-right-to-bracket"></i>
     
  
-    <div class="nav-search">
+   <div class="text">Login</div>
+ 
+</div>
 
-        <input type="text" placeholder="Search Products" #myVariable (keyup)="0">
-        <button (click)="youSearched(myVariable)"> Search</button>
-       
-       
-       
+<ul style="font-size:18px; text-decoration: none;font-size: 15px;" *ngSwitchCase="'Default'"> 
+     
+
+  <li><a href="#" style="text-decoration: none; color: black;"> Cart (0)</a> </li>
+</ul>
+
+
+<!-- Seller -->
+
+
+ <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
+  <i class="fa-solid fa-plus"  ></i> 
+
+   <div class="text">Add product</div>
+  </div>
+  
+
+  
+ <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
+  <i class="fa-solid fa-list"></i>
+
+   <div class="text">List</div>
+  </div>
+  
+
+  
+ <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
+  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+
+   <div class="text">Log Out</div>
+  </div>
+  
+  <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
+    <i class="fa-regular fa-user"></i>
+  
+  
+     <div class="text">Seller Name</div>
     </div>
-    <ul style="font-size:18px;"> 
-      
-        <li><a routerLink=""> Home</a> </li>
-        <li><a [routerLink]="'seller-auth'"> Seller</a> </li>
-        <li><a href="#"> Login</a> </li>
-        <li><a href="#"> Cart (0)</a> </li>
-    </ul>
+    
+  
+    
 
-</nav>
+  
+
+ 
+
+</div>
+</div>

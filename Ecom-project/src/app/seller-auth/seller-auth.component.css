@@ -10,20 +10,64 @@ html {
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #f5e5e5; /* fallback for old browsers */
+   /* fallback for old browsers */
     overflow-x: hidden;
   
-    height: 100%;
+  
+
+      background: #121212; /* Set the desired background color */
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      height: 100%;
+    
+    
  
   
     /* code to make all text unselectable */
 
   }
+  .btn {
+    position: relative;
+    width: 195px;
+    padding: 14px 0px;
+    text-align: center;
+  
+    font-weight: bold;
+    margin: 30px 1px;
+    margin-left: 9px;
+    border: none;
+    box-shadow: 0px 0px 15px #201f1f;
+    background: #1f1f1f;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px; /* Set a value for border-radius, e.g., 2px */
+    transition: background-color 0.5s, color 0.5s; /* Add a transition for smoother effect */
+  }
+  
+  .btn span {
+    background: #ffffff;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    color: #1f1f1f;
+    background-color: transparent; /* Change the background-color on hover to what you prefer */
+  }
+  
+  .btn:hover span {
+    width: 100%;
+  }
   
 
-  
 
-  
+
   h1 {
     color: white;
   
@@ -39,6 +83,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
   }
   
@@ -55,10 +100,10 @@ html {
     width: 420px;
     height: 490px;
   
-    margin-top: 105px;
+    margin-top: -3%;
     padding-top: 20px;
   
-    border-radius: 12px;
+    border-radius: 16px;
   
     display: flex;
     justify-content: center;
@@ -103,18 +148,20 @@ html {
     width: 80px;
   
     transition: all 1s;
+
+    border-radius: 18px;
   }
   
   .submit-btn:hover {
     color: rgb(255, 255, 255);
   
     box-shadow: none;
-    border-radius: 18px;
+   
   }
   .auth-toogle-link{
     color: blueviolet;
     font-size: 14px;
-    margin-top:22px;
+    margin-top:42px;
+    margin: 2px 10px;
     cursor: pointer;
   }
-  

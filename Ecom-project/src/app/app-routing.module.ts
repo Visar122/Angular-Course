@@ -5,10 +5,14 @@ import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { AuthGuard } from './auth.guard';
 
+
+
 const routes: Routes = [
   {path:"",component:HomeComponent},
+  {path:"home",component:HomeComponent},
   {path:"seller-auth",component:SellerAuthComponent},
-  {path:"seller-home",canActivate:[AuthGuard],component:SellerHomeComponent}
+  {path:'seller-home',canActivate:[AuthGuard],component:SellerHomeComponent},
+
 ];
 
 @NgModule({

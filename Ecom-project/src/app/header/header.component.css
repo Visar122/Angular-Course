@@ -1,51 +1,81 @@
 
-.title{
-    font-size:20px;
-    color: #fac031;
+.container{
+
+ 
+    position: absolute;
+    margin-left: 11%;
+    margin-top:2.5%;
     
 }
-.nav{
-    display: flex; /*Puts  all of them in one line*/
-    justify-content: space-between;
-
-    color: rgb(0, 0, 0);
-
-    z-index:1;
-
-  
+.title{
+    font-size:20px;
+    
+    
 }
 
-.icon-container{
+
+
+.sidebar {
+    width: 60px;
+    left: 0; /* Add this line to align the sidebar to the left */
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ffffff;
+    transition: ease-in-out 0.3s;
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+   
+   
+  }
+  .sidebar:hover{
+    width: 200px;
+
+  }
+ 
+
+  .sidebar:hover>.item>.text{
+    opacity: 1;
+
+  }
+ 
+
+  hr{
+    height: 1px;
+    color: #919191;
+    margin: 10px 0;
+  }
+
+  .item {
     display: flex;
-    margin: 10px;
+    align-items: center;
+    margin: 60px 0;
+    
+    white-space: nowrap;
+    color: black;
+    font-size: 17px;
+  }
+  .item .text {
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    transition-delay: 0.2s;
+    margin-left: 15px;
+    white-space: nowrap;
+  }
+ 
 
-}
-.icon-container span{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-20px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-  }
   
-  /* Apply the animation to the custom-bounce class */
-  .custom-bounce {
-    animation: bounce 2s infinite;
-  }
+
 .nav-search{
    
     display:flex;
-    margin-left: 20%;
-    margin-right: 5%;
-    margin-top: 5px;
+    margin-left: 30%;
+    margin-top: -8%;
+   
+  
     justify-content: space-between;
+    position: fixed;
 
    
    
@@ -79,42 +109,17 @@
     
    
 }
-.nav ul{ 
+.item1 button{
+  transition: all 1s;
+  cursor: pointer;
+}
+button:hover{
 
-    display:flex;  /* makes them horizontal*/
-    margin: 0;
-    padding:0 0px;
-    list-style-type: none;
-    text-decoration: none;
-    justify-content: space-between;
-    gap: 30px;
-     font-size: 18px;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  
+  box-shadow: 32px 32px 37px #e2e2e270;
 }
-.nav ul li{
-    padding-left: 15px ;
-    padding-top: 15px;
-
-   
+.fa-arrow-right-from-bracket {
+  transform: rotate(180deg); /* Rotate the logut arrow to the right */
 }
-.nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: 0.1s;
-}
-.nav ul li a::after{
-
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #fac031;
-    display: block;
-    transition: 0.2s linear;
-    padding: 0px 0px;
-}
-.nav ul li a:hover::after{
-    width: 90%;
-}
-.nav ul li a:hover{
-   color: #fac031;
-}
-

@@ -6,16 +6,30 @@
     box-sizing: border-box;
     font-family: sans-serif;
 
+  
+    
+        
 
 }
 body{
     font-family: 'sans-serif';
-    background-image: url('assets\Background.jpg');
+     background: rgb(158, 156, 156);  /* Adjust the last value for transparency (0 to 1) */
+    z-index: 999; /* Ensure it's above other content */
     background-size: cover;
     color: white;
+         
 }
-.container{
-    margin-left: 5%;
-    margin-right: 5%;
-    color: white;
+
+
+.active{
+    box-shadow: 2px 2px 7px #06070770;
+    background-color: rgb(255, 255, 255);
+      border-radius:30px;
+    text-align: center;
+padding: 9px;
+    width: 59px;
+
+    
+
+
 }

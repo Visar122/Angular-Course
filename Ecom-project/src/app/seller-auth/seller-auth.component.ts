@@ -1,6 +1,6 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
-import { signup } from '../data-type';
+import { Login, signup } from '../data-type';
 
 @Injectable({
   providedIn:'root'
@@ -12,9 +12,13 @@ import { signup } from '../data-type';
 })
 export class SellerAuthComponent implements OnInit{
 
-  constructor(private seller:SellerService){}
+  showLogin=false;
+  authError:string='';
+ 
+
+  constructor(private seller:SellerService){} 
  ngOnInit(){
-  this.seller.reloadSeller();
+   this.seller.reloadSeller(); //this uses the method so  if the user is logged in  he dosent se the sign up field  
  }
 
  
@@ -26,6 +30,28 @@ export class SellerAuthComponent implements OnInit{
     
 
   }  
+  login(data:Login){
+   
+    this.seller.userLogin(data);
+
+    this.seller.isLogginError.subscribe((isError)=>{
+
+      console.warn(isError)
+
+      if(isError){
+        this.authError='Email or password is not correct'
+
+      }
+    })
+  }
+  openLogin(){
+    this.showLogin=true;
+  }
+
+  openSignup(){
+    this.showLogin=false;
+
+  }
   
 }
 

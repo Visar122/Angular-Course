@@ -1,7 +1,21 @@
-<div class="flex-container">
-    <div class="content-container">
+
+
+<div class="flex-container" >
+    <div class="content-container" >
+    
+      <button class="btn " (click)="showLogin=false"> Signup<span></span></button >
+      <button class="btn " (click)="showLogin=true">Login<span></span></button>
+ 
       <div class="form-container">
-        <form #sellerSignup="ngForm"(ngSubmit)="sign(sellerSignup.value)"  class="common-form"> <!-- this takes the data -->
+
+ 
+
+       
+      
+      
+       
+         <div class="signup" *ngIf="!showLogin"> <!-- Basically mean if showlogin false -->
+         <form #sellerSignup="ngForm"(ngSubmit)="sign(sellerSignup.value)"  class="common-form"> <!-- this takes the data -->
           <h1>Seller Sign Up</h1>
           <br>
           <br>
@@ -18,12 +32,39 @@
             <br><br>
             <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel>
             <br><br>
-            <input type="submit" value="SUBMIT" class="submit-btn" >
+            <input type="submit" value="Signup" class="submit-btn" >
+            <br>
+           <a class="auth-toogle-link" (click)="openLogin()" >Already have an account? Click for Login</a>
+       
+        </form>
+      </div>
+
+
+<div class="login" *ngIf="showLogin"> 
+        <form #sellerLogin="ngForm"(ngSubmit)="login(sellerLogin.value)"  class="common-form"> <!-- this takes the data -->
+          <h1>Seller Login</h1>
+          <br>
+          <p style="color:red">{{authError}}</p>
+          <br>
+          <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel>
+          <br><br>
+          <br>
+         
+           
+            <span class="subtitle">PASSWORD:</span>
+            <br>
+      
+           
+              <input type="password"  class="form-input"  placeholder=" Enter Password" name="password" ngModel>
+              <br><br>
+            <input type="submit" value="Login" class="submit-btn" >
+            <br>
+            <a class="auth-toogle-link" (click)="openSignup()" >If u don't have an account? Click for Signup</a>
        
        
         </form>
+      </div>
 
       </div>
     </div>
   </div>
-    
