@@ -8,24 +8,7 @@ html {
     box-sizing: border-box;
   }
   
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-   /* fallback for old browsers */
-    overflow-x: hidden;
   
-  
-
-      background: #121212; /* Set the desired background color */
-      
-      overflow-x: hidden;
-      height: 100%;
-    
-    
-  
-  
-    /* code to make all text unselectable */
-
-  }
   .btn {
     position: relative;
     width: 195px;
@@ -69,39 +52,68 @@ html {
 
 
   h1 {
-    color: black;
+    color: rgb(255, 255, 255);
   
     font-size: 35px;
     font-weight: 800;
   }
   
   .flex-container {
-    width: 100vw;
+    width: 74vw;
   
-    margin-top: 60px;
-  margin-left: -7%;
+    margin-top: -6%;
+  margin-left: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Nunito',sans-serif;
+    position:absolute;
 
   }
   
   .content-container {
     width: 500px;
     height: 350px;
-  }
+  } 
+
   
-  .form-container {
-    color: black;
+  .flex-container{
+    display: flex;
+    
+  }
+  .add-product {
+    color: rgb(255, 251, 251);
     display: flex;
     justify-content: center;
     align-items: center;
   
     width: 420px;
-    height: 490px;
+    height: 720px;
   
-    margin-top: -3%;
+    margin-top: 5.5%;
+    padding-top: 20px;
+  
+    border-radius: 16px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 2px white;
+    background: transparent;
+    box-shadow: 25px 25px 25px rgba(255, 255, 255, 0.199);
+  }
+  
+  .info{
+  
+    
+    
+    align-items: center;
+  
+    width: 620px;
+    height: 720px;
+  
+    margin-top: 1%;
+    margin-left:-10%;
     padding-top: 20px;
   
     border-radius: 16px;
@@ -109,27 +121,48 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  
+    border: solid 2px white;
     background: white;
-    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.199);
+    box-shadow: 25px 25px 25px rgba(255, 255, 255, 0.199);
+ 
+
   }
+  .main_text h1{
+    color: black;
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    left: -7%;
+  }
+  .main_text h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+ .main_image img{
+    width: 300px;
+    position: relative;
+    left: 70px;
+}
   
   .subtitle {
     font-size: 11px;
   
-    color: rgba(34, 24, 24, 0.705);
+    color: rgb(255, 250, 250);
     
   }
   
   input {
     border: none;
-    border-bottom: solid rgb(143, 143, 143) 1px;
+    border-bottom: solid rgb(255, 252, 252) 1px;
   
     margin-bottom: 30px;
     
   
     background: none;
-    color: rgba(255, 255, 255, 0.555);
+    color: rgba(255, 225, 225, 0.555);
   
     height: 35px;
     width: 300px;

@@ -10,6 +10,7 @@ import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
 
 
 
@@ -22,6 +23,7 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
     ErrorComponent,
     SellerAuthComponent,
     SellerHomeComponent,
+    AddproductComponent,
   
 
   

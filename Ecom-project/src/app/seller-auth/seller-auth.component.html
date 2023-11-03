@@ -21,20 +21,20 @@
           <br>
           <span class="subtitle">USERNAME:</span>
           <br>
-          <input type="text" name="name"  ngModel>
+          <input type="text" name="name"  ngModel style="color: black;">
           
           <br>
           <span class="subtitle">PASSWORD:</span>
           <br>
     
          
-            <input type="password"  class="form-input"  placeholder=" Enter Password" name="password" ngModel>
+            <input type="password"  class="form-input"  placeholder=" Enter Password" name="password" ngModel style="color: black;">
             <br><br>
-            <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel>
+            <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel style="color: black;">
             <br><br>
             <input type="submit" value="Signup" class="submit-btn" >
             <br>
-           <a class="auth-toogle-link" (click)="openLogin()" >Already have an account? Click for Login</a>
+           <a class="auth-toogle-link" (click)="openLogin()" >Already have an account?<span> Login</span></a>
        
         </form>
       </div>
@@ -46,7 +46,7 @@
           <br>
           <p style="color:red">{{authError}}</p>
           <br>
-          <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel>
+          <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel style="color: black;">
           <br><br>
           <br>
          
@@ -55,11 +55,11 @@
             <br>
       
            
-              <input type="password"  class="form-input"  placeholder=" Enter Password" name="password" ngModel>
+              <input type="password"  class="form-input"  placeholder=" Enter Password" name="password" ngModel style="color: black;">
               <br><br>
             <input type="submit" value="Login" class="submit-btn" >
             <br>
-            <a class="auth-toogle-link" (click)="openSignup()" >If u don't have an account? Click for Signup</a>
+            <a class="auth-toogle-link" (click)="openSignup()" >Don't have an account?<span> Signup</span></a>
        
        
         </form>

@@ -5,7 +5,12 @@
       "email": "shabaniwiisar@gmail.com",
       "password": "1234567",
       "id": 1
+    },
+    {
+      "name": "Visar",
+      "password": "1234",
+      "email": "shabaniwiisar@gmail.com",
+      "id": 2
     }
-  
   ]
 }

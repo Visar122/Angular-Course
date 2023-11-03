@@ -1,11 +1,18 @@
 
 .container{
 
- 
+ width: 200px;
     position: absolute;
     margin-left: 11%;
     margin-top:2.5%;
+   
     
+}
+@media (max-width: 768px) {
+  .container {
+    width: 200px; /* Narrower sidebar for smaller screens */
+    /* You can also adjust other styles as needed for smaller screens */
+  }
 }
 .title{
     font-size:20px;
@@ -26,9 +33,11 @@
     color: black;
     font-family: sans-serif;
     font-size: 18px;
+    z-index: 1; 
    
    
   }
+ 
   .sidebar:hover{
     width: 200px;
 
@@ -55,6 +64,7 @@
     white-space: nowrap;
     color: black;
     font-size: 17px;
+    color: black !important;
   }
   .item .text {
     opacity: 0;
@@ -63,6 +73,7 @@
     margin-left: 15px;
     white-space: nowrap;
   }
+  
  
 
   
@@ -71,11 +82,15 @@
    
     display:flex;
     margin-left: 30%;
-    margin-top: -8%;
+    margin-top: -19%;
    
   
     justify-content: space-between;
     position: fixed;
+    background: white;
+    color: black;
+   
+    border-radius: 12px;
 
    
    
@@ -84,24 +99,24 @@
 
      width: 700px;
     
-     border: 1px solid rgb(248, 246, 246);
+     border: 1px solid rgb(212, 208, 208);
     height: 32.5px;
     
     background: transparent;
-    color: white;
-    
+     
+     color: black;
     
     
   
    
 }
 .nav-search input::placeholder{
-    color: white;
+  color: black;
 }
 .nav-search button{
-    width: 69px;
-    color: rgb(247, 247, 247);
-    border: 1px solid rgb(248, 246, 246);
+    width: 72px;
+    color: black;
+    border: 1px solid rgb(160, 158, 158);
     height: 33px;
      
     background: transparent;
@@ -109,17 +124,7 @@
     
    
 }
-.item1 button{
-  transition: all 1s;
-  cursor: pointer;
-}
-button:hover{
 
-  color: rgb(255, 255, 255);
-  border-radius: 12px;
-  
-  box-shadow: 32px 32px 37px #e2e2e270;
-}
 .fa-arrow-right-from-bracket {
   transform: rotate(180deg); /* Rotate the logut arrow to the right */
 }

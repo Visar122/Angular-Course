@@ -4,17 +4,17 @@
     <router-outlet ></router-outlet>
 </div>
 <div  [ngSwitch]="menuType" >
-<div class="sidebar"  >
+<div class="sidebar" >
     <div class="item" [routerLink]="'home'" style=" cursor:pointer;"style="margin:0px "   > 
-       <img class="icon" src="../assets/icon1.png"   width="40" height="35"  >
+       <img class="icon" src="../assets/icon1.png"   width="40" height="35" >
 
       <div class="text">ECOM APP</div>
  
    </div>
    <hr/>
    
-<div class="item"  *ngSwitchCase="'Default'"> 
-  <i class="fa-solid fa-house" routerLink="home" routerLinkActive="active"  ></i>
+<div class="item" routerLink="home" *ngSwitchCase="'Default'"> 
+  <i class="fa-solid fa-house"  routerLinkActive="active"  ></i>
 
    <div class="text">Home</div>
   </div>
@@ -39,10 +39,10 @@
 </div>
 
 
-<div class="item"  *ngSwitchCase="'Default'">
+<div class="item" [routerLink]="'seller-auth'" *ngSwitchCase="'Default'">
 
  
-       <i class="fa-regular fa-user" [routerLink]="'seller-auth'" routerLinkActive="active"></i>
+       <i class="fa-regular fa-user"  routerLinkActive="active"></i>
     
 
  <div class="text" >Seller-auth</div>
@@ -70,23 +70,24 @@
 <!-- Seller -->
 
 
- <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
-  <i class="fa-solid fa-plus"  ></i> 
+ <div class="item"  [routerLink]="'seller-add-product'"  *ngSwitchCase="'seller'"> 
+  <i class="fa-solid fa-plus"   routerLinkActive="active"></i> 
 
    <div class="text">Add product</div>
+
   </div>
   
 
   
- <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
-  <i class="fa-solid fa-list"></i>
+ <div class="item" [routerLink]="'seller-home'"  *ngSwitchCase="'seller'"  > 
+  <i class="fa-solid fa-list"routerLinkActive="active"></i>
 
    <div class="text">List</div>
   </div>
   
 
   
- <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
+ <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active" (click)="logout()"> 
   <i class="fa-solid fa-arrow-right-from-bracket"></i>
 
 
@@ -97,7 +98,7 @@
     <i class="fa-regular fa-user"></i>
   
   
-     <div class="text">Seller Name</div>
+     <div class="text">{{sellerName|titlecase}}</div> <!-- title case will make the first letter capital -->
     </div>
     
   
