@@ -32,7 +32,7 @@ export class SellerAuthComponent implements OnInit{
   }  
   login(data:Login){
    
-    this.seller.userLogin(data);
+    this.seller.SellerLogin(data);
 
     this.seller.isLogginError.subscribe((isError)=>{
 

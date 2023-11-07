@@ -1,0 +1,43 @@
+
+.product-list{
+    margin-left:140% ;
+    width: 380px;
+    margin-top: 20%;
+
+
+}
+table{
+    text-align: left;
+    color: rgb(70, 66, 66);
+    border-collapse:collapse ;
+    background-color: rgb(255, 255, 255);
+
+
+border-bottom-right-radius: 26px;
+
+
+
+}
+thead{
+    background-color: #3f3939;
+    
+    color: white;
+    height: 42px;
+    
+    
+   
+  
+}
+table td,table th{
+ 
+
+    min-width:160px ;
+    border-bottom: solid 0.5px rgb(105, 13, 133);
+  
+
+}
+img{
+    height: 100px;
+    width: 100px;
+
+}

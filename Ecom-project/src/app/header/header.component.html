@@ -1,11 +1,44 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<div class="container"Setbackground> 
 
+
+<div class="container"> 
+    <ul class=" wrapper">
+      
+      
+  
+  
+    
+
+      <li class="icon facebook">
+        <span class="tooltip">Facebook</span>
+        <span><i class="fab fa-facebook-f"></i></span>
+      </li>
+
+      <li class="icon twitter">
+        <span class="tooltip">Twitter</span>
+        <span><i class="fab fa-twitter"></i></span>
+      </li>
+       
+      <li class="icon instagram">
+        <span class="tooltip">Instagram</span>
+        <span><i class="fab fa-instagram"></i></span>
+      </li>
+
+      <li class="icon github">
+        <span class="tooltip">Github</span>
+        <span><i class="fab fa-github"></i></span>
+      </li>
+
+      <li class="icon youtube">
+        <span class="tooltip">Youtube</span>
+        <span><i class="fab fa-youtube"></i></span>
+      </li>
+    </ul>
     <router-outlet ></router-outlet>
 </div>
 <div  [ngSwitch]="menuType" >
 <div class="sidebar" >
-    <div class="item" [routerLink]="'home'" style=" cursor:pointer;"style="margin:0px "   > 
+    <div class="item"  style=" cursor:pointer;"style="margin:0px "   > 
        <img class="icon" src="../assets/icon1.png"   width="40" height="35" >
 
       <div class="text">ECOM APP</div>
@@ -93,7 +126,17 @@
 
    <div class="text">Log Out</div>
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   
+  <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active" style="margin: -30px 0px;"> 
+    <i class="fa-regular fa-circle-question"></i>
+  
+  
+     <div class="text">Hjælp</div> <!-- title case will make the first letter capital -->
+     
+    </div>
+  
+
   <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active"> 
     <i class="fa-regular fa-user"></i>
   

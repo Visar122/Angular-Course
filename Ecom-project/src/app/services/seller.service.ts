@@ -32,8 +32,8 @@ reloadSeller(){
       this.route.navigate(['seller-home'])
   }
 }
-
-userLogin(data:Login){
+//is actually seller
+SellerLogin(data:Login){
   console.warn(data);
   this.http.get(`http://localhost:3000/Seller?email=${data.email}&password=${data.password}`,
   {observe:'response'}).subscribe((result:any)=>{ 

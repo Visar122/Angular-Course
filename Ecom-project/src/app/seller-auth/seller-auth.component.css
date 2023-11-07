@@ -79,11 +79,12 @@ html {
     width: 100vw;
   
     margin-top: 60px;
-  margin-left: -7%;
+  margin-left: -5%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Nunito',sans-serif;
+    position: fixed;
 
   }
   
@@ -98,10 +99,11 @@ html {
     justify-content: center;
     align-items: center;
   
-    width: 420px;
-    height: 490px;
+    width: 390px;
+    height: 475px;
   
     margin-top: -3%;
+    margin-left: 3%;
     padding-top: 20px;
   
     border-radius: 16px;

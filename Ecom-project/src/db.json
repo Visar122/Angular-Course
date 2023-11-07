@@ -12,5 +12,34 @@
       "email": "shabaniwiisar@gmail.com",
       "id": 2
     }
+  ],
+  "products": [
+    {
+      "ProductName": "Iphone 14",
+      "Price": "8000",
+      "Category": "Mobile",
+      "Color": "Silver",
+      "Description": "Apple",
+      "Image": "https://static.vecteezy.com/system/resources/previews/011/765/918/non_2x/white-smartphone-model-apple-iphone-14-new-it-industry-original-wallpaper-mockup-for-web-design-on-a-white-background-free-vector.jpg",
+      "id": 1
+    },
+    {
+      "ProductName": "Iphone 15",
+      "Price": "8000",
+      "Category": "Mobile",
+      "Color": "Silver",
+      "Description": "Apple",
+      "Image": "https://static.vecteezy.com/system/resources/previews/011/765/918/non_2x/white-smartphone-model-apple-iphone-14-new-it-industry-original-wallpaper-mockup-for-web-design-on-a-white-background-free-vector.jpg",
+      "id": 2
+    },
+    {
+      "ProductName": "Airpods Pro",
+      "Price": "2200",
+      "Category": "Airpods",
+      "Color": "White",
+      "Description": "Apple Product (Airpods Pro)",
+      "Image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1632861342000",
+      "id": 3
+    }
   ]
 }
