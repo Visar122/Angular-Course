@@ -2,38 +2,7 @@
 
 
 <div class="container"> 
-    <ul class=" wrapper">
-      
-      
-  
-  
-    
-
-      <li class="icon facebook">
-        <span class="tooltip">Facebook</span>
-        <span><i class="fab fa-facebook-f"></i></span>
-      </li>
-
-      <li class="icon twitter">
-        <span class="tooltip">Twitter</span>
-        <span><i class="fab fa-twitter"></i></span>
-      </li>
-       
-      <li class="icon instagram">
-        <span class="tooltip">Instagram</span>
-        <span><i class="fab fa-instagram"></i></span>
-      </li>
-
-      <li class="icon github">
-        <span class="tooltip">Github</span>
-        <span><i class="fab fa-github"></i></span>
-      </li>
-
-      <li class="icon youtube">
-        <span class="tooltip">Youtube</span>
-        <span><i class="fab fa-youtube"></i></span>
-      </li>
-    </ul>
+ 
     <router-outlet ></router-outlet>
 </div>
 <div  [ngSwitch]="menuType" >
@@ -41,7 +10,7 @@
     <div class="item"  style=" cursor:pointer;"style="margin:0px "   > 
        <img class="icon" src="../assets/icon1.png"   width="40" height="35" >
 
-      <div class="text">ECOM APP</div>
+      <div class="text" >ECOM APP</div>
  
    </div>
    <hr/>
@@ -61,10 +30,11 @@
      </div>
 
      <div class="text" >Search</div>
+     
          <div class="nav-search" *ngIf="(search)"> 
        <input type="text" placeholder="Search Products" #myVariable (keyup)="0">
-       <button (click)="youSearched(myVariable)"> Search</button>
-       <button (click)="search=false;"> Close</button>
+       <button (click)="youSearched(myVariable)"> <i class="fa-solid fa-magnifying-glass" style="color:rgb(0, 0, 0)"></i></button>
+       <button class="close" (click)="search=false;"> <i class="fa-solid fa-xmark" style="color: #ff0000;"></i></button>
        
      </div>
       
@@ -93,15 +63,23 @@
  
 </div>
 
+
 <ul style="font-size:18px; text-decoration: none;font-size: 15px;" *ngSwitchCase="'Default'"> 
      
 
-  <li><a href="#" style="text-decoration: none; color: black;"> Cart (0)</a> </li>
+  <li><a href="#" style="text-decoration: none; color: black;font-weight: 700;"> Cart (0)</a> </li>
 </ul>
 
 
 <!-- Seller -->
 
+
+   
+<div class="item" routerLink="home" *ngSwitchCase="'seller'"> 
+  <i class="fa-solid fa-house"  routerLinkActive="active"  ></i>
+
+   <div class="text">Home</div>
+  </div>
 
  <div class="item"  [routerLink]="'seller-add-product'"  *ngSwitchCase="'seller'"> 
   <i class="fa-solid fa-plus"   routerLinkActive="active"></i> 

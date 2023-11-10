@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 
 
@@ -24,6 +25,7 @@ import { AddproductComponent } from './addproduct/addproduct.component';
     SellerAuthComponent,
     SellerHomeComponent,
     AddproductComponent,
+    UpdateProductComponent,
   
 
   

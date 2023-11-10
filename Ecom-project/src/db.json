@@ -15,21 +15,21 @@
   ],
   "products": [
     {
-      "ProductName": "Iphone 14",
-      "Price": "8000",
+      "ProductName": "Iphone 15 pro",
+      "Price": "9000",
       "Category": "Mobile",
-      "Color": "Silver",
-      "Description": "Apple",
-      "Image": "https://static.vecteezy.com/system/resources/previews/011/765/918/non_2x/white-smartphone-model-apple-iphone-14-new-it-industry-original-wallpaper-mockup-for-web-design-on-a-white-background-free-vector.jpg",
+      "Color": "Blakc",
+      "Description": "Apple Product",
+      "Image": "https://ee.co.uk/medias/iphone-15-pro-black-titanium-desktop3-WebP-Format-488?context=bWFzdGVyfHJvb3R8NTUxNHxpbWFnZS93ZWJwfHN5cy1tYXN0ZXIvcm9vdC9oYTcvaDAxLzEwMDc0NDg5NzgyMzAyL2lwaG9uZS0xNS1wcm8tYmxhY2stdGl0YW5pdW0tZGVza3RvcDNfV2ViUC1Gb3JtYXQtNDg4fDgzN2RjOTc5Yzc5ZTg5NTMyZjU0NzZlOTEwMjU4YTEyYjA0NzVjNzMyMGEzYjY4YWJiZmQ1OWU2ZGQ3MzVjOTA",
       "id": 1
     },
     {
-      "ProductName": "Iphone 15",
-      "Price": "8000",
+      "ProductName": "Iphone 14 pro",
+      "Price": "7000",
       "Category": "Mobile",
       "Color": "Silver",
-      "Description": "Apple",
-      "Image": "https://static.vecteezy.com/system/resources/previews/011/765/918/non_2x/white-smartphone-model-apple-iphone-14-new-it-industry-original-wallpaper-mockup-for-web-design-on-a-white-background-free-vector.jpg",
+      "Description": "Apple Product",
+      "Image": "https://mobilworld.by/upload/iblock/3ec/3ec9e32052c3e1e6f9f0630cb026bf2b.png",
       "id": 2
     },
     {
@@ -37,9 +37,18 @@
       "Price": "2200",
       "Category": "Airpods",
       "Color": "White",
-      "Description": "Apple Product (Airpods Pro)",
+      "Description": "Airpoids pro",
       "Image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1632861342000",
       "id": 3
+    },
+    {
+      "ProductName": "Samsung",
+      "Price": "2200",
+      "Category": "Monitor",
+      "Color": "Black",
+      "Description": "Samsung Gaming Monitor",
+      "Image": "https://johnlewis.scene7.com/is/image/JohnLewis/110235201",
+      "id": 4
     }
   ]
 }
