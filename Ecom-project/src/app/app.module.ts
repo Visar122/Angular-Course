@@ -16,6 +16,8 @@ import { UpdateProductComponent } from './update-product/update-product.componen
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,8 @@ import { UpdateProductComponent } from './update-product/update-product.componen
     SellerHomeComponent,
     AddproductComponent,
     UpdateProductComponent,
+   
+
   
 
   

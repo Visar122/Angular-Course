@@ -4,6 +4,7 @@
      position: absolute;
      margin-left: 11%;
      margin-top:2.5%;
+     
     
      
  }
@@ -35,7 +36,9 @@
      color: black;
      font-family: sans-serif;
      font-size: 18px;
-     z-index: 1; 
+     z-index: 2; 
+     position: fixed; /* Use fixed positioning to overlay on other components */
+     box-shadow: 0 0 10px rgb(161, 160, 160);
     
     
    }
