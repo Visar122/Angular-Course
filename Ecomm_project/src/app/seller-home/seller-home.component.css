@@ -1,0 +1,74 @@
+
+.product-list{
+    margin-left:100% ;
+    width: 590px;
+    margin-top: 20%;
+    font-weight: 550;
+  
+
+}
+table{
+    text-align: left;
+    color: rgb(70, 66, 66);
+    border-collapse:collapse ;
+    background-color: rgb(255, 255, 255);
+
+
+border-bottom-right-radius: 26px;
+border-top-right-radius: 26px;
+box-shadow: 8px 8px 8px 2px #030303c2;
+
+
+}
+thead{
+    background-color: #3f3939;
+  
+    color: white;
+    height: 45px;
+    box-shadow: 18px 18px 18px 12px transparent;
+    
+   
+  
+}
+table td,table th{
+ 
+
+    min-width:160px ;
+    border-bottom: solid 0.5px rgb(105, 13, 133);
+  
+
+}
+img{
+    height: 100px;
+    width: 100px;
+      background-size: cover;
+  
+
+}
+button{
+    cursor: pointer;
+  
+    border: none;
+
+  
+    box-shadow: 2px 2px 7px rgb(8, 8, 8);
+  
+    background:#ffffff;
+    color: rgba(107, 80, 80, 0.8);
+  
+    width: 80px;
+    padding: 8px;
+  
+    transition: all 1s;
+
+    border-radius: 18px;
+    margin: 0px -10px;
+    
+}
+button:hover{
+    box-shadow: 2px 2px 7px rgb(173, 99, 99);
+    width: 90px;
+}
+.message{
+    color: red;
+}

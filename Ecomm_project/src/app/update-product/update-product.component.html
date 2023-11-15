@@ -1,0 +1,64 @@
+
+<div class="flex-container" >
+
+    <div class="info">
+    
+      <div class="main_text">
+     
+        <h1 style=" color: #fafafa;" >Update <span>Products</span></h1>
+    </div>
+
+      </div>
+      <div class="form-container">
+       
+        <div class="add-product">
+
+    <form #addProduct="ngForm" class="common-form" (ngSubmit)="submit(addProduct.value)">
+      
+        <div class="product"> 
+        <h1>Update  product</h1>
+        <p class="message">{{message}}</p>
+   
+        <br>
+        
+        <span class="subtitle">Enter Product Name:</span>
+        <br>
+        <input type="text" name="ProductName" placeholder=""  ngModel="{{productData?.ProductName}}" style="color: black;"> <!--{productData?.ProductName means if the name is not undefined -->
+        
+        <br>
+        <span class="subtitle">Enter Product Price:</span>
+        <br>
+        <br>
+       
+          <input type="text"  class="form-input"  placeholder=" Enter Price:" name="Price" ngModel="{{productData?.Price}}" style="color: rgb(20, 18, 18);">
+          <br><br>
+        
+         <span class="subtitle">Enter Product Category:</span>
+         <br>
+          <input type="text"  class="form-input"  placeholder=" Enter  Category" name="Category" ngModel="{{productData?.Category}}" style="color: rgb(0, 0, 0);">
+          <br><br>
+
+          <span class="subtitle">Enter Product Color</span>
+          <br>
+          <input type="text" class="form-input" placeholder="Enter  Color" name="Color" ngModel="{{productData?.Color}}" style="color: rgb(3, 3, 3);">
+          <br>  <br>
+      
+          <span class="subtitle">Enter Product Description</span>
+         <br>
+         <textarea class="description-input" placeholder="Enter Description" name="Description" ngModel="{{productData?.Description}}" style="color: rgb(19, 16, 16);"></textarea>
+          <br><br>
+        
+          <span class="subtitle">Enter Product Image Url </span>
+          <br>
+          <input type="text" class="form-input" placeholder="Enter Image URL" name="Image" ngModel="{{productData?.Image}}"  style="color: rgb(15, 12, 12);">
+          
+          <br>
+          <input type="submit" value="Update Product" class="submit-btn"  >
+          <br>
+        </div>
+     
+   
+    </form>
+</div>
+      </div>
+   

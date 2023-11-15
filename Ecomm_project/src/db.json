@@ -1,0 +1,108 @@
+{
+  "Seller": [
+    {
+      "name": "Visar Shabani",
+      "email": "shabaniwiisar@gmail.com",
+      "password": "1234567",
+      "id": 1
+    },
+    {
+      "name": "Visar",
+      "password": "1234",
+      "email": "shabaniwiisar@gmail.com",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "ProductName": "Iphone 15 pro",
+      "Price": "9000",
+      "Category": "Mobile",
+      "Color": "Black",
+      "Description": "Apple Product",
+      "Image": "https://ee.co.uk/medias/iphone-15-pro-black-titanium-desktop3-WebP-Format-488?context=bWFzdGVyfHJvb3R8NTUxNHxpbWFnZS93ZWJwfHN5cy1tYXN0ZXIvcm9vdC9oYTcvaDAxLzEwMDc0NDg5NzgyMzAyL2lwaG9uZS0xNS1wcm8tYmxhY2stdGl0YW5pdW0tZGVza3RvcDNfV2ViUC1Gb3JtYXQtNDg4fDgzN2RjOTc5Yzc5ZTg5NTMyZjU0NzZlOTEwMjU4YTEyYjA0NzVjNzMyMGEzYjY4YWJiZmQ1OWU2ZGQ3MzVjOTA",
+      "id": 1
+    },
+    {
+      "ProductName": "Iphone 14 pro",
+      "Price": "7000",
+      "Category": "Mobile",
+      "Color": "Silver",
+      "Description": "Apple Product",
+      "Image": "https://mobilworld.by/upload/iblock/3ec/3ec9e32052c3e1e6f9f0630cb026bf2b.png",
+      "id": 2
+    },
+    {
+      "ProductName": "Airpods Pro",
+      "Price": "2200",
+      "Category": "Airpods",
+      "Color": "White",
+      "Description": "Airpods pro",
+      "Image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1632861342000",
+      "id": 3
+    },
+    {
+      "ProductName": "Samsung",
+      "Price": "2200",
+      "Category": "Monitor",
+      "Color": "Black",
+      "Description": "Samsung Gaming Monitor",
+      "Image": "https://images.samsung.com/is/image/samsung/p6pim/dk/ls24ag320nuxen/gallery/dk-odyssey-g3-g32a-ls24ag320nuxen-531087008?$650_519_PNG$",
+      "id": 4
+    },
+    {
+      "ProductName": "Gode Gamer Pc",
+      "Price": "7559",
+      "Category": "PC",
+      "Color": "Black",
+      "Description": "High Performance Gaming Pc ",
+      "Image": "https://sharkgaming.dk/media/catalog/product/a/z/azza-celesta-1_1__1_1.png?optimize=medium&fit=bounds&height=&width=&canvas=:",
+      "id": 5
+    },
+    {
+      "ProductName": "Razer BlackWidows",
+      "Price": "1500",
+      "Category": "Keyboard",
+      "Color": "Black",
+      "Description": "Razor Mehcanical Keyboard",
+      "Image": "https://m.media-amazon.com/images/I/71sXzUqI9XL.jpg",
+      "id": 6
+    },
+    {
+      "ProductName": "Steel Series Arctis 9 Wireless",
+      "Price": "1250",
+      "Category": "Headphones",
+      "Color": "Black",
+      "Description": "Steel Series Wireless Headphones",
+      "Image": "https://media.steelseriescdn.com/thumbs/catalog/items/61484/21ceeebd676e4e1b880350ddd8a472dc.png.500x400_q100_crop-fit_optimize.png",
+      "id": 7
+    },
+    {
+      "ProductName": "Razer Gaming Mouse",
+      "Price": "800",
+      "Category": "Mouse",
+      "Color": "Black",
+      "Description": "Razer Wireless Gaming Mouse",
+      "Image": "https://assets2.razerzone.com/images/pnx.assets/dd2cb52f4bf27ff926aa88e6df386019/razer-basilisk-v3-pro-500x500.png",
+      "id": 8
+    },
+    {
+      "ProductName": "Playstation 5",
+      "Price": "4500",
+      "Category": "Playstation",
+      "Color": "White",
+      "Description": "Playstation Sony",
+      "Image": "https://gmedia.playstation.com/is/image/SIEPDC/console-right_@1x?fmt=png-alpha&scl=1",
+      "id": 9
+    },
+    {
+      "ProductName": "Playstation 5 Controller",
+      "Price": "799",
+      "Category": "Playstation Controller",
+      "Color": "Black",
+      "Description": "Playstation Sony Controller",
+      "Image": "https://cdn.cdon.com/media-dynamic/images/product/cloud/store/game/ps5-playstation5/image2/playstation_5_dualsense_controller_midnight_black-74261157-.jpg?impolicy=product&imwidth=600",
+      "id": 10
+    }
+  ]
+}

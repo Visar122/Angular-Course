@@ -1,0 +1,198 @@
+.container{
+
+  width: 200px;
+     position: absolute;
+     margin-left: 11%;
+     margin-top:2.5%;
+     
+    
+     
+ }
+ @media (max-width: 768px) {
+   .container {
+     width: 200px; /* Narrower sidebar for smaller screens */
+     /* You can also adjust other styles as needed for smaller screens */
+   }
+ }
+ .title{
+     font-size:20px;
+     
+     
+ }
+ .text{
+   margin-left: 20%;
+ }
+ 
+ 
+ 
+ .sidebar {
+     width: 60px;
+     left: 0; /* Add this line to align the sidebar to the left */
+     height: 100vh;
+     box-sizing: border-box;
+     padding: 10px;
+     background-color: #ffffff;
+     transition: ease-in-out 0.3s;
+     color: black;
+     font-family: sans-serif;
+     font-size: 18px;
+     z-index: 2; 
+     position: fixed; /* Use fixed positioning to overlay on other components */
+     box-shadow: 0 0 10px rgb(161, 160, 160);
+    
+    
+   }
+  
+   .sidebar:hover{
+     width: 200px;
+ 
+   }
+  
+ 
+   .sidebar:hover>.item>.text{
+     opacity: 1;
+ 
+   }
+  
+ 
+   hr{
+     height: 1px;
+     color: #919191;
+     margin: 10px 0;
+   }
+ 
+   .item {
+     display: flex;
+     align-items: center;
+     margin: 60px 0;
+     
+     white-space: nowrap;
+     color: black;
+     font-size: 17px;
+     color: black !important;
+   }
+   .item .text {
+     opacity: 0;
+     transition: ease-in-out 0.3s;
+     transition-delay: 0.2s;
+     margin-left: 15px;
+     white-space: nowrap;
+     font-weight: 550;
+   }
+   
+  
+ 
+   
+ 
+ .nav-search{
+    
+     display:flex;
+     margin-left: 25%;
+     margin-top: -18%;
+         border: none;
+   
+     justify-content: space-between;
+     position: fixed;
+     background: white;
+     color: black;
+     height: 33px;
+     border: none;
+     border-radius: 9px;
+     background: #ffffff;
+     box-shadow:  1px 1px 2px #d9d9d9,
+                  -1px -1px 2px #ffffff;
+ 
+    
+    
+ }
+ .nav-search input{
+ 
+      width: 680px;
+     
+      border: 1px solid rgb(212, 208, 208);
+     height: 32.5px;
+     
+     background: transparent;
+      
+      color: black;
+       border-radius: 9px;
+      
+      border-right: none;
+    
+ }
+ .nav-search input::placeholder{
+   color: black;
+ }
+ .nav-search button{
+  width: 43px;
+     color: black;
+     border: 2px solid rgb(160, 158, 158);
+     height: 33px;
+      cursor: pointer;
+     background: transparent;
+     
+     border-top: none;
+     border-left:none ;
+     border-bottom: none;
+    transition: 0.3s;
+    border-radius:12px ;
+     
+    
+ }
+ .close{
+  
+   border-right:none ;
+ 
+ }
+ .nav-search button:hover{
+   background-color: #e2e4e5;
+   width: 55px;
+ }
+ 
+ 
+ .fa-arrow-right-from-bracket {
+   transform: rotate(180deg); /* Rotate the logut arrow to the right */
+ }
+ 
+ ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+.active{
+  box-shadow: 2px 2px 7px #06070770;
+  background-color: rgb(255, 255, 255);
+    border-radius:30px;
+  text-align: center;
+padding: 9px;
+  width: 59px;
+
+  
+
+
+}
+.Search{
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  display: list-item;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  width: 300px;
+
+}
+.Search li{
+  padding: 5px;
+  
+}
+.Search li a{
+cursor: pointer;
+}
+.Search li:hover{
+  padding: 5px;
+  background-color: #f1efef;
+  
+}

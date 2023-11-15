@@ -24,7 +24,7 @@ export class AppComponent  implements OnInit{
 
   }
   unsubscribe(){
-    this.Unsub.unsubscribe()
+    this.Unsub.unsubscribe();
       
   }
   subscribe(){
