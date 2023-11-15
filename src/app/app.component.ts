@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularBasics';
+  title = 'AngularApp';
+  message='Angular is the best java Scprit framework for bulding client-side application';
 }
