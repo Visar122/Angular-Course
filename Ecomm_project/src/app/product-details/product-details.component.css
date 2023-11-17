@@ -1,0 +1,81 @@
+.main{
+  
+    width: 800px;
+margin: -12px -30vh;
+
+}
+.main{
+    margin-top:50px ;
+    margin-bottom:80px ;
+}
+.product-img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin: -50px 0px;
+}
+.product-color{
+    border:3px solid #000 ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.btn {
+    position: relative;
+    width: 105px;
+    padding: 4px 0px;
+    text-align: center;
+  
+    font-weight: bold;
+    margin: 30px 12px;
+    right: 19px;
+    border: none;
+    box-shadow: 0px 0px 15px #999595;
+    background: #ffffff;
+    color: #1f1f1f;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px; /* Set a value for border-radius, e.g., 2px */
+    transition: background-color 0.5s, color 0.5s; /* Add a transition for smoother effect */
+  }
+  
+  .btn span {
+   
+ 
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    
+    color: #8a8686;
+    background-color: transparent; /* Change the background-color on hover to what you prefer */
+    background: #4b4747;
+  }
+  
+  .btn:hover span {
+    width: 100%;
+  }
+  
+  .quantity-group{
+    margin-top: 20px;
+
+  }
+  .quantity-group button{
+   padding: 9px;
+   border-radius: 73px;
+   
+
+  }
+  .quantity-group input{
+    padding: 5px;
+    width: 30px;
+    border-radius: 8px;
+    border: none;
+ 
+   }

@@ -1,3 +1,4 @@
+
 <div class="product-list">
     <h1>Added Product List</h1>
     <p class="message">{{Productmessage}}</p>
@@ -25,7 +26,7 @@
                   <td>{{item.Category}}</td>
                   <td>{{item.Description}}</td>
                   <td><button (click)="deletprodcut(item.id)"><i class="fa-solid fa-trash" style="color: #645e5e;"></i></button></td>
-                  <td ><button routerLink="/update-product/{{item.id}}" style="color: #000000 ;">Update</button></td><!-- need to add id to app routing also -->
+                  <td ><button routerLink="/update-product/{{item.id}}" style="color: #272727;">Update</button></td><!-- need to add id to app routing also -->
                 </tr>
                
         </tbody>

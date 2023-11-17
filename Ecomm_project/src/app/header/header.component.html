@@ -5,6 +5,34 @@
  
     <router-outlet ></router-outlet>
 </div>
+ 
+<div  *ngIf="isHomeRoute()"> 
+<div class="navbar" > 
+  <div class="Logo">
+      <img src="../assets/icon1.png">
+      
+  </div>
+
+ 
+    
+   <div class="icon" >
+       
+       
+        
+         <div class="Ønskelist"> 
+        <i class="fa-regular fa-heart"></i>
+       </div>
+       
+      <div class="kurv" > 
+        <a href="#Home "   ><i class="fa-solid fa-cart-shopping"> </i>  </a>
+         <span class="quantity">0 </span>
+      </div>
+
+   </div>
+
+  </div>
+</div>
+
 <div  [ngSwitch]="menuType" >
 <div class="sidebar" >
     <div class="item"  style=" cursor:pointer;"style="margin:0px "   > 
@@ -21,9 +49,9 @@
    <div class="text">Home</div>
   </div>
    
-<div class="item"  *ngSwitchCase="'Default'">
+<div class="item"  *ngSwitchCase="'Default'" >
 
-     <div class="icon" (click)="searched()" > 
+     <div class="icon" (click)="focusSearchInput()"  > 
        <i class="fa-solid fa-magnifying-glass"   >
        
        </i>
@@ -31,15 +59,15 @@
 
      <div class="text" >Search</div>
      
-         <div class="nav-search"> 
-       <input type="text" placeholder="Search Products" #myVariable (keyup)="Searchproduct($event)" (blur)="hideSearch()">
-       <button (click)="youSearched(myVariable)"> <i class="fa-solid fa-magnifying-glass" style="color:rgb(0, 0, 0)"></i></button>
-       <button class="close" (click)="search=false;"> <i class="fa-solid fa-xmark" style="color: #ff0000;"></i></button>
+         <div class="nav-search" *ngIf="isHomeRoute()"> 
+       <input type="text" #searchInput placeholder="Search Products" #myVariable (keyup)="Searchproduct($event)" (blur)="hideSearch()"> <!--(blur)="hideSearch()" makes it so if i click outside it gets removed -->
+       <button (click)="submitSearch(searchInput.value)" > <i class="fa-solid fa-magnifying-glass" style="color:rgb(0, 0, 0)"></i></button>
+       <button class="close" (click)="clearSearchInput(myVariable);"> <i class="fa-solid fa-xmark" style="color: #ff0000;"></i></button>
        
 
        <ul class="Search" *ngIf="searchResult"> 
         <li *ngFor="let item of searchResult">
-        <a>{{item.ProductName}}</a>
+          <a (click)="setSelectedProduct(item)" (mouseover)="setSelectedProduct(item)"> {{item.ProductName}}</a>
         </li>
        </ul>
      </div>

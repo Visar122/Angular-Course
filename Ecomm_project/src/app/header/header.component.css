@@ -14,11 +14,62 @@
      /* You can also adjust other styles as needed for smaller screens */
    }
  }
- .title{
-     font-size:20px;
-     
-     
- }
+ .navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left:0;
+  background: white;
+  box-shadow: 0 0 10px rgb(161, 160, 160);
+  z-index: 1;
+}
+.Logo img{
+  width: 79px;
+  cursor: pointer;
+  margin :-11% -160% ; 
+ 
+
+
+}
+
+ .navbar .icon {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  left: 26.7vh;
+  margin :-8%  0% ; 
+ 
+}
+
+.navbar .icon i{
+  font-size:18.4.px;
+  color: black;
+  margin:0 5px;
+  cursor:pointer;
+  transition :0.3s;
+
+
+}
+.navbar .icon i:hover{
+  color: #fac031
+}
+.navbar .icon span{
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+  position: absolute;
+  top: -5px;
+  left:100% ;
+  padding: 0.2px 10px;
+  left: 100%;
+  transition: 0.5s;
+
+}
+
  .text{
    margin-left: 20%;
  }
@@ -38,7 +89,7 @@
      font-size: 18px;
      z-index: 2; 
      position: fixed; /* Use fixed positioning to overlay on other components */
-     box-shadow: 0 0 10px rgb(161, 160, 160);
+     box-shadow: 0 0 1px rgb(161, 160, 160);
     
     
    }
@@ -87,8 +138,8 @@
  .nav-search{
     
      display:flex;
-     margin-left: 25%;
-     margin-top: -18%;
+     margin-left: 31vw; /* Use viewport width units */
+  margin-top: -39vh; /* Use viewport height units */
          border: none;
    
      justify-content: space-between;
@@ -175,7 +226,7 @@ padding: 9px;
 
 }
 .Search{
-  position: absolute;
+  position:absolute;
   top: 40px;
   z-index: 10;
   display: list-item;

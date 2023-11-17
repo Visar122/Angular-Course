@@ -7,6 +7,8 @@ import { AuthGuard } from './auth.guard';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ErrorComponent } from './error/error.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
+import { SearchComponent } from './search/search.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 
@@ -17,6 +19,8 @@ const routes: Routes = [
   {path:'seller-home',canActivate:[AuthGuard],component:SellerHomeComponent,},
    {path:'seller-add-product',canActivate:[AuthGuard],component:AddproductComponent},//auth guard is so they can't just put the url link of the component and get acess to it without logging in
    {path:"update-product/:id",component:UpdateProductComponent},
+   {path:"search/:query",component:SearchComponent}, //need to add this query so i can search stuff fx:  http://localhost:4200/search/mobile
+   {path:"details/:ProductId",component:ProductDetailsComponent },
    {path:"**",component:ErrorComponent}
   ];
 

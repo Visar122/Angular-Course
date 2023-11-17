@@ -13,6 +13,10 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchComponent } from './search/search.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { BackgroundDirective } from './Directive/background.directive';
+
 
 
 
@@ -29,6 +33,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SellerHomeComponent,
     AddproductComponent,
     UpdateProductComponent,
+    SearchComponent,
+    ProductDetailsComponent,
+    BackgroundDirective,
+
    
 
   
