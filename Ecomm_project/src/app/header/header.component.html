@@ -6,8 +6,9 @@
     <router-outlet ></router-outlet>
 </div>
  
-<div  *ngIf="isHomeRoute()"> 
+<div  > 
 <div class="navbar" > 
+  
   <div class="Logo">
       <img src="../assets/icon1.png">
       
@@ -17,13 +18,22 @@
     
    <div class="icon" >
        
-       
+  
+  
+  
+    <div class="text" *ngIf="isSellerRoute()">
+      <i class="fa-regular fa-user" ></i>
+      <br> <br>
+      <p>{{sellerName|titlecase}}</p>
+    </div>
+    
+ 
         
-         <div class="Ønskelist"> 
+         <div class="Ønskelist" *ngIf="isHomeRoute()"> 
         <i class="fa-regular fa-heart"></i>
        </div>
        
-      <div class="kurv" > 
+      <div class="kurv" *ngIf="isHomeRoute()"> 
         <a href="#Home "   ><i class="fa-solid fa-cart-shopping"> </i>  </a>
          <span class="quantity">0 </span>
       </div>
@@ -67,37 +77,68 @@
 
        <ul class="Search" *ngIf="searchResult"> 
         <li *ngFor="let item of searchResult">
-          <a (click)="setSelectedProduct(item)" (mouseover)="setSelectedProduct(item)"> {{item.ProductName}}</a>
+          <a (click)="setSelectedProduct(item)" (mouseover)="setSelectedProduct(item)"  > {{item.ProductName}}</a>
+    
         </li>
        </ul>
      </div>
       
 
+</div>     
+
+<!-- User-Login -->
+<div class="item"  [routerLink]="'user-login'"     *ngSwitchCase="'Default'">
+
+
+  <i class="fa-solid fa-right-to-bracket" routerLinkActive="active"></i>
+
+
+<div class="text">Login</div>
+   
 </div>
 
+<div class="item" routerLink="home" *ngSwitchCase="'user'"> 
+  <i class="fa-solid fa-house"  routerLinkActive="active"  ></i> 
 
-<div class="item" [routerLink]="'seller-auth'" *ngSwitchCase="'Default'">
+   <div class="text">Home</div>
+  </div>
+   
+<div class="item"  *ngSwitchCase="'user'"  routerLinkActive="active">
+  <i class="fa-regular fa-user" style="color: black;"></i>
+     <br> <br>
+     <div class="text">{{UserName|titlecase}}</div>
+   </div>
+
+
+
+ <div class="item"  *ngSwitchCase="'user'"  routerLinkActive="active" (click)="logoutUser()"> 
+  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+
+   <div class="text">Log Out</div>
+       
+ 
+  </div>
+
+
+
+
+
+
+
+
+  <div class="item" [routerLink]="'seller-auth'" *ngSwitchCase="'Default'">
 
  
-       <i class="fa-regular fa-user"  routerLinkActive="active"></i>
-    
+    <i class="fa-regular fa-user"  routerLinkActive="active"></i>
+  
+  
+  <div class="text" >Seller-auth</div>
+  
+  </div>
 
- <div class="text" >Seller-auth</div>
-     
- </div>
-
-
- <div class="item" [routerLink]="'login'"  routerLinkActive="active"  *ngSwitchCase="'Default'">
-
-
-       <i class="fa-solid fa-right-to-bracket"></i>
-    
- 
-   <div class="text">Login</div>
- 
-</div>
-
-
+  
+  
 <ul style="font-size:18px; text-decoration: none;font-size: 15px;" *ngSwitchCase="'Default'"> 
      
 
@@ -106,6 +147,8 @@
 
 
 <!-- Seller -->
+
+
 
 
    
@@ -132,7 +175,7 @@
   
 
   
- <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active" (click)="logout()"> 
+ <div class="item"  *ngSwitchCase="'seller'"  routerLinkActive="active" (click)="logoutSeller()"> 
   <i class="fa-solid fa-arrow-right-from-bracket"></i>
 
 
