@@ -1,31 +1,4 @@
-html {
-    scroll-behavior: smooth;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-   /* fallback for old browsers */
-    overflow-x: hidden;
-  
-  
 
-      background: #121212; /* Set the desired background color */
-      
-      overflow-x: hidden;
-      height: 100%;
-    
-    
-  
-  
-    /* code to make all text unselectable */
-
-  }
   .btn {
     position: relative;
     width: 175px;
@@ -33,8 +6,8 @@ html {
     text-align: center;
   
     font-weight: bold;
-    margin: 30px 1px;
-    margin-left: 14px;
+    margin: 40px 11px;
+    margin-left: 29px;
     border: none;
     box-shadow: 0px 0px 15px #201f1f;
     background: #1f1f1f;
@@ -79,7 +52,7 @@ html {
     width: 100vw;
   
     margin-top: 60px;
-  margin-left: -5%;
+  margin-left: -10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,14 +72,14 @@ html {
     justify-content: center;
     align-items: center;
   
-    width: 370px;
-    height: 495px;
+    width: 51vh;
+    height: 595px;
   
     margin-top: -3%;
-    margin-left: 3%;
+    margin-right: -42%;
     padding-top: 20px;
   
-    border-radius: 16px;
+    border-radius: 36px;
   
     display: flex;
     justify-content: center;
@@ -148,7 +121,7 @@ html {
     background:#1A1B27;
     color: rgba(255, 255, 255, 0.8);
   
-    width: 80px;
+    width: 100%;
   
     transition: all 1s;
 

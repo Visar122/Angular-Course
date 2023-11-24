@@ -1,8 +1,22 @@
+body{
+  
+    background:rgb(36, 35, 35) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 1050%;
+  margin-top: -11%;
+  margin-left: -93%;
 
+
+  }
+    
 .product-list{
-    margin-left:100% ;
+    margin-left:-30% ;
     width: 590px;
-    margin-top: 10%;
+    margin-top: 4%;
     margin-bottom: 40%;
     font-weight: 550;
   

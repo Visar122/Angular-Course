@@ -9,22 +9,34 @@ import { Router } from '@angular/router';
 })
 export class SellerService {
   isSellerLoggedIn=new BehaviorSubject<boolean>(false);
-  isLogginError=new EventEmitter<boolean>(false)
+  isLogginError=new EventEmitter<boolean>(false);
+  isSignUpError=new EventEmitter<boolean>(false);
 
   constructor(private http:HttpClient,private route:Router) { }
 
- userSignUp(data:signup){
-  return this.http.post('http://localhost:3000/Seller',data,{observe:'response'}).subscribe((result)=>{  // this adds the login to http
+ userSignUp(data:signup){//u can see the user is created
+    this.http.get(`http://localhost:3000/Seller?email=${data.email}`,{observe:'response'}).subscribe((result:any)=>{
+      if(result&&result.body&&result.body.length > 0){
+        console.warn('Email already exists');
+          // You may want to handle this case, show an error message, etc.
 
-console.warn(result);
-if(result){
+          this.isSignUpError.next(true);
+          return;
+      } else{ 
+        return this.http.post('http://localhost:3000/Seller',data,{observe:'response'}).subscribe((result)=>{  // this adds the login to http
 
-localStorage.setItem('seller',JSON.stringify(result.body))//The data you store in localStorage remains available even after the user closes the browser, as long as the data is not explicitly removed or cleared.
-this.route.navigate(['seller-home'])           //'seller'is a label to call the data stored,JSON.stringify(result.body)) takes the body mot all the information
-} 
-})
- }
-    //this makes it possible so the logged in user dosen't se the sign up field again
+          console.warn(result);
+              if(result){
+  
+                localStorage.setItem('seller',JSON.stringify(result.body))//The data you store in localStorage remains available even after the user closes the browser, as long as the data is not explicitly removed or cleared.
+                this.route.navigate(['seller-home']) //'seller'is a label to call the data stored,JSON.stringify(result.body)) takes the result only body so name password email not all the information
+                  
+              } 
+         });
+      }
+   })
+}
+    //this makes it possible so the logged in user dosen't see the sign up field again
 reloadSeller(){
 
   if(localStorage.getItem('seller')){//so if we have item in seller
@@ -32,6 +44,7 @@ reloadSeller(){
       this.route.navigate(['seller-home'])
   }
 }
+
 //is actually seller
 SellerLogin(data:Login){
   console.warn(data);

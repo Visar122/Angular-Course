@@ -11,7 +11,7 @@ export class SellerHomeComponent  implements OnInit{
    
   productlist2: undefined | Product[]; //this is an array of product interface and  to use interface i must import it
   Productmessage:undefined|string;
-;   constructor(private product:ProductService){}
+  constructor(private product:ProductService){}
   ngOnInit(){
 
   this.list();                /*   this.product.productList().subscribe((result)=>{

@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   title = 'Ecom-project';
   menuType = 'default';
   sellerName = '';
+  UserName='';
   searchResult: undefined | Product[];
 
   constructor(private route: Router, private product: ProductService) {}
@@ -21,16 +22,26 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.route.events.subscribe((value: any) => {
       console.warn(value);
-      if (value.url) {
+      if (value.url){
 
         if (localStorage.getItem('seller') && value.url.includes('seller')) {
            console.warn('this is seller area');
          
            let sellerStore = localStorage.getItem('seller');
           let sellerData = sellerStore && JSON.parse(sellerStore)[0];
-          this.sellerName = sellerData.name;
+       
           this.menuType = 'seller';
-        } else {
+          this.sellerName = sellerData.name;
+        }
+        
+        else if(localStorage.getItem('user')){
+           let userStore=localStorage.getItem('user')
+           let userData=userStore &&JSON.parse(userStore)[0]; // userStore && means if userstore is true
+          this.UserName=userData.name;
+          this.menuType='user';
+        } 
+
+        else {
           this.menuType = 'Default';
         }
     
@@ -41,7 +52,18 @@ export class HeaderComponent implements OnInit {
 
   isHomeRoute() {
     return (
-      this.route.url.includes('') || this.route.url.includes('/home') || this.route.url.includes('/search') || this.route.url.includes('search/:query')
+       this.route.url.includes('/home') || this.route.url.includes('/search') || this.route.url.includes('search/:query') || this.route.url.includes('/seller-auth')|| this.route.url.includes('/user-login')
+    );
+  } 
+  isSellerRoute(){
+    return(
+      this.route.url.includes('/seller-add-product')||this.route.url.includes('/seller-home')
+    );
+  }
+  
+  isDetailRoute() {
+    return (
+       this.route.url.includes('/details') 
     );
   }
 
@@ -55,8 +77,12 @@ export class HeaderComponent implements OnInit {
     return (myVariable.value = '');
   }
 
-  logout() {
+  logoutSeller() {
     localStorage.removeItem('seller');
+    this.route.navigate(['home']);
+  }
+  logoutUser(){
+    localStorage.removeItem('user');
     this.route.navigate(['home']);
   }
 
@@ -84,7 +110,8 @@ export class HeaderComponent implements OnInit {
 
   submitSearch(value: string) {
     console.warn(value);
-
+  // Get the current route URL
+  
     
     this.route.navigate([`search/${value}`]);
   }

@@ -15,18 +15,18 @@ constructor(private route:ActivatedRoute,private product:ProductService){}
 
 ngOnInit(){
   let ProductId=this.route.snapshot.paramMap.get('id');
-  console.warn(ProductId);
+  console.warn(ProductId);                                  // this.product.getProductbyId(ProductId) gets a number and that number now is the id from data or productdata
   ProductId && this.product.getProductbyId(ProductId).subscribe((data)=>{ //ProductId &&  means if productid is not null or undifined
     console.warn(data)
     this.productData=data;
   });
 }
-  submit(data:any){
+  submit(data2:any){
 
    if(this.productData){
-    data.id=this.productData.id; //this is so  i get the id aswell with th update
+    data2.id=this.productData.id; //this is so  i get the id aswell with th update,the program dosen't run  without it 
    }
-     this.product.updateProduct(data).subscribe((result)=>{
+     this.product.updateProduct(data2).subscribe((result)=>{
   if(result){
      this.message='Product is updated'
   }
@@ -34,6 +34,6 @@ ngOnInit(){
      setTimeout(()=>{
       this.message=undefined;
      },3000);
-   console.warn(data);
+   console.warn(data2);
   }
 }

@@ -9,6 +9,7 @@ import { ErrorComponent } from './error/error.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { SearchComponent } from './search/search.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
    {path:"update-product/:id",component:UpdateProductComponent},
    {path:"search/:query",component:SearchComponent}, //need to add this query so i can search stuff fx:  http://localhost:4200/search/mobile
    {path:"details/:ProductId",component:ProductDetailsComponent },
+   {path:"user-login",component:UserAuthComponent },
    {path:"**",component:ErrorComponent}
   ];
 

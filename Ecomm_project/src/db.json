@@ -1,15 +1,15 @@
 {
   "Seller": [
     {
-      "name": "Visar Shabani",
+      "name": "visar",
+      "password": "12345678",
       "email": "shabaniwiisar@gmail.com",
-      "password": "1234567",
       "id": 1
     },
     {
-      "name": "Visar",
-      "password": "1234",
-      "email": "shabaniwiisar@gmail.com",
+      "name": "1231231",
+      "password": "12334224",
+      "email": "sh1abaniwiisar@gmail.com",
       "id": 2
     }
   ],
@@ -35,7 +35,7 @@
     {
       "ProductName": "Airpods Pro",
       "Price": "2200",
-      "Category": "Airpods",
+      "Category": "Headphones",
       "Color": "White",
       "Description": "Airpods pro",
       "Image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1632861342000",
@@ -103,6 +103,14 @@
       "Description": "Playstation Sony Controller",
       "Image": "https://cdn.cdon.com/media-dynamic/images/product/cloud/store/game/ps5-playstation5/image2/playstation_5_dualsense_controller_midnight_black-74261157-.jpg?impolicy=product&imwidth=600",
       "id": 10
+    }
+  ],
+  "Users": [
+    {
+      "name": "Visar",
+      "email": "shabaniwiisar@gmail.com",
+      "password": "12345678",
+      "id": 1
     }
   ]
 }

@@ -16,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchComponent } from './search/search.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { BackgroundDirective } from './Directive/background.directive';
+import { UserAuthComponent } from './user-auth/user-auth.component';
 
 
 
@@ -36,6 +37,7 @@ import { BackgroundDirective } from './Directive/background.directive';
     SearchComponent,
     ProductDetailsComponent,
     BackgroundDirective,
+    UserAuthComponent,
 
    
 

@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
 
 <div class="main">
   
@@ -72,9 +81,9 @@
   </div>
   
     <ngb-carousel *ngIf="popularProducts">
-      <ng-template  *ngFor="let item of popularProducts" ngbSlide style="color: black;">
+      <ng-template  *ngFor="let item of popularProducts" ngbSlide style="color: rgb(187, 187, 187);">
         <div class="picsum-img-wrapper">
-        <img class="product-header-image" src="{{item.Image}}" alt="Random first slide" style="width: 590px;">
+          <a routerLink="/details/{{item.id}}">  <img [src]="item.Image" alt="" style="width: 590px;"></a>
 
           </div>
         <div class="carousel-caption">
@@ -96,7 +105,7 @@
   <div class="row" >  <!-- Bootstrap row  -->
       <div class="col-sm-25" *ngFor="let item2 of trendyProducts"> <!-- it takes 25 precent of the screen -->
          <div class="product-item" >
-          <img [src]="item2.Image" alt="">
+        <a routerLink="/details/{{item2.id}}"><img [src]="item2.Image" alt=""></a>  
 
            <div class="product-details">
             <h6 class="name-head">New Apple Product</h6>
@@ -119,3 +128,5 @@
 </div>
 
 </div>
+</body>
+</html>

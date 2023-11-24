@@ -15,6 +15,7 @@ export class BackgroundDirective implements OnInit{
     this.renderer.setStyle(this.element.nativeElement, 'color', 'rgb(0, 0, 0)');
     this.renderer.setStyle(this.element.nativeElement, 'background-color', 'white');
     this.renderer.setStyle(this.element.nativeElement, 'height', '100vh');
+    this.renderer.setStyle(this.element.nativeElement, 'text-align', 'left');
     
 
   }

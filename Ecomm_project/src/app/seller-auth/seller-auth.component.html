@@ -18,6 +18,9 @@
          <form #sellerSignup="ngForm"(ngSubmit)="sign(sellerSignup.value)"  class="common-form"> <!-- this takes the data -->
           <h1>Seller Sign Up</h1>
           <br>
+           <p style="color:red">{{SignUpError}}</p>
+           <p style="color:red">{{SignUpEmptyError}}</p>
+           <p style="color:red">{{signUpcharacterError}}</p>
           <br>
           <span class="subtitle">USERNAME:</span>
           <br>
@@ -27,7 +30,6 @@
           <span class="subtitle">PASSWORD:</span>
           <br>
     
-         
             <input type="password"  class="form-input"  placeholder=" Enter Password" name="password" ngModel style="color: black;">
             <br><br>
             <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel style="color: black;">
@@ -44,7 +46,9 @@
         <form #sellerLogin="ngForm"(ngSubmit)="login(sellerLogin.value)"  class="common-form"> <!-- this takes the data -->
           <h1>Seller Login</h1>
           <br>
-          <p style="color:red">{{authError}}</p>
+          <p style="color:red">{{LoginError}}</p>
+          <p style="color:red">{{LoginEmptyError}}</p>
+          <p style="color:red">{{logincharacterError}}</p>
           <br>
           <input type="text"  class="form-input"  placeholder=" Enter Email" name="email" ngModel style="color: black;">
           <br><br>
