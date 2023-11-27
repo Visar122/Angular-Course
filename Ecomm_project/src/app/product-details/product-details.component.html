@@ -11,7 +11,7 @@
             <h6>Category :{{productData.Category}}</h6>
             <h6>Description :{{productData.Description}}</h6>
             <button class="btn">Buy Now</button>
-            <button class="btn">Add to Card</button>
+            <button class="btn" (click)="addToCard()">Add to Card</button>
 
             <div class="quantity-group">
                 <button (click)="handleQuantity('min')"> - </button>      
@@ -19,6 +19,12 @@
                 <button (click)="handleQuantity('plus')">+</button>
             </div>
         </div>
+           
+     
+      </div>
+      <div class="relatable items"> 
+        <h2> Relatable Items</h2>
+        <ngx-slick-carousel> </ngx-slick-carousel>
       </div>
 </div>
 </div>

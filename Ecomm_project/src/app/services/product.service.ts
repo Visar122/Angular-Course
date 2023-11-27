@@ -38,4 +38,24 @@ export class ProductService {
  Searchproduct(query:string){
   return this.http.get<Product[]>(`http://localhost:3000/products?q=${query}`);
  }
+ Addtocart(data:Product){
+   // Initialize an empty array to store cart data
+  let cartData=[];
+  let ourData=localStorage.getItem('localCart')  //this is to check if we have data inside local storage
+  
+  if(!ourData){ // // If there is no existing cart data, create a new array with the current product and store it in local storage
+    localStorage.setItem('localCart',JSON.stringify([data])); 
+  
+  }
+
+  else{  // If there is existing cart data, parse it from JSON and add the current product to the array
+    cartData=JSON.parse(ourData); //this puts new data or the cartData to already one OurData object array
+    cartData.push(data);
+    localStorage.setItem('localCart',JSON.stringify([cartData])); //// Update the local storage with the updated cart data ,so now i can have multiple items
+  }
+   
+    //localStorage.setItem is a method in JavaScript that belongs to the localStorage object. It allows you to store key-value pairs in a web browser's local storage. like we store user and seller
+    // Json stringify Converts the object to a JSON string
+ }
 }
+ 

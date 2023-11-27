@@ -39,4 +39,17 @@ export class ProductDetailsComponent implements OnInit {
     }
 
   }
+
+  addToCard(){
+    if(this.productData){ 
+      this.productData.Quantity=this.productQuantity  //i get the quantity too
+
+      if(!localStorage.getItem('user')){ //this is to check if user is loggged in,so if user is not logged in
+        this.product.Addtocart(this.productData); // now we call the method and the products is stored inside console application just like seller and user
+      }
+      console.warn('this is so u see the quantity and the products gets added when i click add To card');
+    console.warn(this.productData);
+  }
+
+  }
 }
